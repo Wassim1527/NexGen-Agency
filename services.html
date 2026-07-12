@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
 
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
       theme: {
         extend: {
           colors: {
-            ink: '#0B0B0A', ivory: '#F6F3EC', parchment: '#EDE7DA',
+            ink: '#0B0B0B', ivory: '#F6F5F3', parchment: '#EDEAE5',
             stone: '#86806F', muted: '#4B473C', burgundy: '#7A2331'
           },
           fontFamily: {
@@ -67,18 +67,11 @@
 <body data-page="services" class="bg-ivory text-ink font-sans antialiased">
   <a href="#main" data-i18n="nav.skip" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] focus:bg-ink focus:text-ivory focus:px-4 focus:py-2 focus:rounded-full">Passer au contenu</a>
 
-  <header class="sticky top-0 z-50 pt-4">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-      <div class="nav-pill rounded-full flex items-center justify-between px-3 sm:px-5 py-2">
-        <a href="index.html" class="flex items-center gap-3" aria-label="NexGen Web Designs — Accueil">
-          <span class="relative w-10 h-10 shrink-0">
-            <span class="absolute inset-0 rounded-xl bg-ink clip-notch-tr"></span>
-            <span class="absolute inset-0 flex items-center justify-center text-ivory"><svg viewBox="0 25 275 180" class="w-6 h-6" fill="none" aria-hidden="true"><rect x="30" y="40" width="14" height="150" fill="currentColor"/><rect x="18" y="40" width="38" height="8" fill="currentColor"/><rect x="14" y="182" width="46" height="8" fill="currentColor"/><polygon points="44,40 70,40 150,190 124,190" fill="currentColor"/><path d="M 250.3,106.9 A 50,50 0 1,0 230,171.3" stroke="currentColor" stroke-width="14"/><circle cx="250.3" cy="106.9" r="8" fill="currentColor"/><rect x="211" y="118" width="26" height="72" fill="currentColor"/><rect x="205" y="182" width="38" height="8" fill="currentColor"/></svg></span>
-          </span>
-          <span class="leading-none">
-            <span class="block font-display text-xl font-semibold tracking-tight">NexGen</span>
-            <span class="block text-[10px] tracking-[0.28em] text-muted -mt-0.5">WEB DESIGNS</span>
-          </span>
+  <header class="nav-bar sticky top-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3.5">
+        <a href="index.html" aria-label="NexGen Web Designs — Accueil" class="shrink-0">
+          <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
         </a>
 
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" aria-label="Principal">
@@ -89,32 +82,32 @@
         </nav>
 
         <div class="hidden lg:flex items-center gap-3">
-          <button data-lang-toggle class="text-xs font-semibold tracking-wide border border-ink/15 rounded-full w-9 h-9 flex items-center justify-center hover:bg-ink hover:text-ivory transition-colors" aria-label="Switch language / Changer de langue">
+          <button data-lang-toggle class="text-xs font-semibold tracking-wide border border-ivory/25 text-ivory rounded-full w-9 h-9 flex items-center justify-center hover:bg-ivory hover:text-ink transition-colors" aria-label="Switch language / Changer de langue">
             <span data-lang-label>EN</span>
           </button>
-          <a href="contact.html" data-i18n="nav.cta" class="btn-primary text-sm font-semibold rounded-full px-5 py-2.5">Réserver un appel</a>
+          <a href="contact.html" data-i18n="nav.cta" class="bg-ivory text-ink text-sm font-semibold rounded-full px-5 py-2.5 hover:bg-burgundy hover:text-ivory transition-colors">Réserver un appel</a>
         </div>
 
         <button id="hamburger" class="hamburger lg:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="block w-6 h-0.5 bg-ink"></span>
-          <span class="block w-6 h-0.5 bg-ink"></span>
-          <span class="block w-6 h-0.5 bg-ink"></span>
+          <span class="block w-6 h-0.5 bg-ivory"></span>
+          <span class="block w-6 h-0.5 bg-ivory"></span>
+          <span class="block w-6 h-0.5 bg-ivory"></span>
         </button>
       </div>
+    </div>
 
-      <div id="mobile-menu" class="mobile-menu lg:hidden absolute left-4 right-4 mt-2 card-border bg-ivory rounded-3xl p-6 shadow-xl">
-        <nav class="flex flex-col gap-5 text-lg font-medium" aria-label="Mobile">
-          <a href="index.html" data-i18n="nav.home">Accueil</a>
-          <a href="services.html" data-i18n="nav.services" aria-current="page" class="link-underline">Services</a>
-          <a href="about.html" data-i18n="nav.about">À propos</a>
-          <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <div class="flex items-center gap-3 mt-6">
-          <button data-lang-toggle class="text-xs font-semibold tracking-wide border border-ink/15 rounded-full w-9 h-9 flex items-center justify-center" aria-label="Switch language / Changer de langue">
-            <span data-lang-label>EN</span>
-          </button>
-          <a href="contact.html" data-i18n="nav.cta" class="btn-primary flex-1 text-center text-sm font-semibold rounded-full px-5 py-2.5">Réserver un appel</a>
-        </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden absolute left-0 right-0 top-full bg-ink border-t border-ivory/10 px-4 sm:px-6 py-6">
+      <nav class="flex flex-col gap-5 text-lg font-medium" aria-label="Mobile">
+        <a href="index.html" data-i18n="nav.home" class="link-underline">Accueil</a>
+        <a href="services.html" data-i18n="nav.services" aria-current="page" class="link-underline">Services</a>
+        <a href="about.html" data-i18n="nav.about" class="link-underline">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact" class="link-underline">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3 mt-6">
+        <button data-lang-toggle class="text-xs font-semibold tracking-wide border border-ivory/25 text-ivory rounded-full w-9 h-9 flex items-center justify-center" aria-label="Switch language / Changer de langue">
+          <span data-lang-label>EN</span>
+        </button>
+        <a href="contact.html" data-i18n="nav.cta" class="bg-ivory text-ink flex-1 text-center text-sm font-semibold rounded-full px-5 py-2.5 hover:bg-burgundy hover:text-ivory transition-colors">Réserver un appel</a>
       </div>
     </div>
   </header>
@@ -150,15 +143,8 @@
   <footer class="bg-ink text-ivory">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
-        <a href="index.html" class="flex items-center gap-3 mb-4" aria-label="NexGen Web Designs — Accueil">
-          <span class="relative w-10 h-10 shrink-0">
-            <span class="absolute inset-0 rounded-xl bg-ivory clip-notch-tr"></span>
-            <span class="absolute inset-0 flex items-center justify-center text-ink"><svg viewBox="0 25 275 180" class="w-6 h-6" fill="none" aria-hidden="true"><rect x="30" y="40" width="14" height="150" fill="currentColor"/><rect x="18" y="40" width="38" height="8" fill="currentColor"/><rect x="14" y="182" width="46" height="8" fill="currentColor"/><polygon points="44,40 70,40 150,190 124,190" fill="currentColor"/><path d="M 250.3,106.9 A 50,50 0 1,0 230,171.3" stroke="currentColor" stroke-width="14"/><circle cx="250.3" cy="106.9" r="8" fill="currentColor"/><rect x="211" y="118" width="26" height="72" fill="currentColor"/><rect x="205" y="182" width="38" height="8" fill="currentColor"/></svg></span>
-          </span>
-          <span class="leading-none">
-            <span class="block font-display text-xl font-semibold tracking-tight">NexGen</span>
-            <span class="block text-[10px] tracking-[0.28em] text-ivory/60 -mt-0.5">WEB DESIGNS</span>
-          </span>
+        <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs — Accueil">
+          <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web à Montréal, pour les entreprises d'ici et d'ailleurs au Canada.</p>
       </div>
