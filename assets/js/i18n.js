@@ -1,0 +1,529 @@
+const translations = {
+  fr: {
+    meta: {
+      home: {
+        title: "NexGen Web Designs — Conception de sites web à Montréal",
+        description: "Studio de conception web basé à Montréal. Sites professionnels par abonnement mensuel, sans gros montant de départ. Desservons les entreprises du Québec et du Canada."
+      },
+      services: {
+        title: "Services et tarifs — NexGen Web Designs",
+        description: "Forfaits d'abonnement mensuel pour sites web professionnels à Montréal : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
+      },
+      about: {
+        title: "À propos — NexGen Web Designs",
+        description: "NexGen Web Designs est un studio de conception web basé à Montréal, dédié aux entreprises québécoises et canadiennes."
+      },
+      contact: {
+        title: "Contact — NexGen Web Designs",
+        description: "Discutons de votre projet de site web. Studio basé à Montréal, au service des entreprises du Québec et du Canada."
+      }
+    },
+    nav: {
+      home: "Accueil",
+      services: "Services",
+      about: "À propos",
+      contact: "Contact",
+      cta: "Réserver un appel",
+      skip: "Passer au contenu"
+    },
+    home: {
+      hero: {
+        eyebrow: "Studio web basé à Montréal",
+        title: "Votre site web professionnel. Payé mois par mois.",
+        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises de Montréal et d'ailleurs au Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
+        ctaPrimary: "Voir nos forfaits",
+        ctaSecondary: "Réserver un appel",
+        badge: "Dès 199 $ CAD / mois"
+      },
+      trust: {
+        eyebrow: "Ancrés à Montréal",
+        title: "Fait ici, pour ici",
+        items: [
+          { title: "Entreprise 100 % québécoise", desc: "Une équipe basée à Montréal qui comprend le marché d'ici et vos réalités d'affaires." },
+          { title: "Conforme à la Loi 25", desc: "Vos données et celles de vos clients sont traitées selon les exigences québécoises en matière de protection des renseignements personnels." },
+          { title: "Service bilingue", desc: "Nous travaillons aussi bien en français qu'en anglais, à l'écrit comme à l'oral." },
+          { title: "Livraison en 10 à 14 jours", desc: "De la première rencontre à la mise en ligne, la majorité de nos projets sont livrés en deux semaines." }
+        ]
+      },
+      value: {
+        eyebrow: "Notre approche",
+        title: "Un abonnement mensuel, pas une facture choc",
+        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web — avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
+        traditionalTitle: "Agence traditionnelle",
+        traditional: [
+          "Facture initiale de 3 000 $ à 10 000 $",
+          "Entretien facturé séparément, à l'heure",
+          "Contrat de plusieurs années",
+          "Délais de 2 à 4 mois"
+        ],
+        nexgenTitle: "NexGen Web Designs",
+        nexgen: [
+          "Abonnement mensuel dès 199 $ CAD",
+          "Hébergement, sécurité et mises à jour inclus",
+          "Aucun contrat à long terme",
+          "Livraison en 10 à 14 jours"
+        ]
+      },
+      servicesTeaser: {
+        eyebrow: "Nos forfaits",
+        title: "Un forfait pour chaque étape de votre croissance",
+        link: "Voir tous les forfaits",
+        cards: [
+          { name: "Core", tag: "1 page", price: "199 $", period: "/mois", desc: "Une page percutante pour lancer votre présence en ligne." },
+          { name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois", desc: "Un site complet pour présenter vos services en détail." },
+          { name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois", desc: "Rendez-vous et suivi client automatisés." },
+          { name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois", desc: "Une solution web entièrement personnalisée." }
+        ]
+      },
+      ctaBanner: {
+        title: "Prêt à mettre votre entreprise en ligne?",
+        subtitle: "Réservez un appel de 20 minutes, sans engagement.",
+        button: "Réserver un appel"
+      }
+    },
+    services: {
+      header: {
+        eyebrow: "Nos forfaits",
+        title: "Des forfaits simples, un abonnement mensuel",
+        subtitle: "Quatre forfaits pensés pour chaque étape de votre entreprise. Prix en dollars canadiens, sans surprise à la facturation."
+      },
+      plans: [
+        {
+          name: "Core", tag: "1 page", price: "199 $", period: "/mois CAD",
+          desc: "Une page web percutante pour lancer votre présence en ligne rapidement.",
+          features: [
+            "Site une page, design sur mesure",
+            "Optimisé pour mobile et tablette",
+            "Formulaire de contact intégré",
+            "Hébergement et nom de domaine inclus",
+            "Référencement local de base (SEO)"
+          ],
+          cta: "Choisir Core"
+        },
+        {
+          name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois CAD", badge: "Le plus populaire",
+          desc: "Un site multi-pages pour présenter vos services en détail.",
+          features: [
+            "Jusqu'à 5 pages (Accueil, Services, À propos, etc.)",
+            "Design entièrement personnalisé",
+            "Formulaires et intégration Google Maps",
+            "Hébergement, sécurité et mises à jour inclus",
+            "Référencement local avancé"
+          ],
+          cta: "Choisir Plus"
+        },
+        {
+          name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois CAD",
+          desc: "Pour les entreprises qui veulent automatiser leur prise de rendez-vous et leur suivi de clientèle.",
+          features: [
+            "Tout le contenu du forfait Plus",
+            "Prise de rendez-vous en ligne automatisée",
+            "Automatisations courriel (suivi, rappels)",
+            "Intégration à vos outils (CRM, calendrier)",
+            "Rapports mensuels de performance"
+          ],
+          cta: "Choisir Pro"
+        },
+        {
+          name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois CAD",
+          desc: "Une solution web entièrement sur mesure pour les projets complexes ou les besoins particuliers.",
+          features: [
+            "Architecture et fonctionnalités sur mesure",
+            "Boutique en ligne, portails clients ou applications web",
+            "Intégrations avancées (ERP, paiement, API)",
+            "Accompagnement stratégique dédié",
+            "Support prioritaire"
+          ],
+          cta: "Discuter de mon projet"
+        }
+      ],
+      faq: {
+        eyebrow: "Questions fréquentes",
+        title: "Ce qu'on nous demande le plus souvent",
+        items: [
+          { q: "Puis-je annuler mon abonnement à tout moment?", a: "Oui. Il n'y a aucun contrat à long terme : vous pouvez modifier ou annuler votre forfait avec un préavis de 30 jours." },
+          { q: "Le nom de domaine et l'hébergement sont-ils inclus?", a: "Oui, tous nos forfaits incluent l'hébergement, la sécurité et la gestion du nom de domaine." },
+          { q: "Combien de temps avant la mise en ligne de mon site?", a: "La majorité de nos projets sont livrés entre 10 et 14 jours ouvrables suivant notre premier appel." },
+          { q: "Que se passe-t-il si mes besoins changent?", a: "Vous pouvez changer de forfait à tout moment pour ajuster votre abonnement à la croissance de votre entreprise." }
+        ]
+      },
+      ctaBanner: {
+        title: "Pas certain du forfait qui vous convient?",
+        subtitle: "Réservons un appel, on vous conseille sans pression.",
+        button: "Réserver un appel"
+      }
+    },
+    about: {
+      header: {
+        eyebrow: "À propos",
+        title: "Le partenaire web de Montréal pour les entreprises qui avancent",
+        subtitle: "Nous concevons des sites web professionnels pour les commerces, cabinets et entrepreneurs d'ici, avec la rigueur d'une agence et la simplicité d'un abonnement."
+      },
+      story: {
+        eyebrow: "Notre histoire",
+        title: "Pourquoi NexGen existe",
+        body: "Trop d'entreprises repoussent leur présence en ligne à cause d'une facture initiale de plusieurs milliers de dollars. NexGen Web Designs a été fondée à Montréal pour changer cette réalité : un site professionnel, livré rapidement, payé mensuellement — comme n'importe quel autre outil d'affaires essentiel.",
+        body2: "Nous travaillons avec des commerces de quartier, des cabinets professionnels et des entrepreneurs partout au Québec et au Canada, toujours en français et en anglais."
+      },
+      process: {
+        eyebrow: "Notre processus",
+        title: "De la première rencontre à la mise en ligne",
+        steps: [
+          { num: "01", title: "Découverte", desc: "Un appel de 20 minutes pour comprendre vos objectifs, votre clientèle et vos besoins." },
+          { num: "02", title: "Design", desc: "Nous concevons une maquette sur mesure alignée à votre image de marque." },
+          { num: "03", title: "Développement", desc: "Votre site est construit, testé sur mobile et tablette, et optimisé pour le référencement local." },
+          { num: "04", title: "Lancement et suivi", desc: "Mise en ligne, puis entretien, sécurité et mises à jour continues inclus dans votre abonnement." }
+        ]
+      },
+      values: {
+        eyebrow: "Notre façon de travailler",
+        title: "Ce sur quoi nous ne transigeons pas",
+        items: [
+          { title: "Bilingue par défaut", desc: "Chaque projet est pensé en français et en anglais dès le départ, pas comme une réflexion après coup." },
+          { title: "Rapide, sans raccourcis", desc: "Des délais courts ne veulent pas dire du travail bâclé : chaque site est testé avant sa mise en ligne." },
+          { title: "Prix transparent", desc: "Un seul abonnement mensuel, taxes et détails clairs dès le premier appel." }
+        ]
+      },
+      ctaBanner: {
+        title: "Envie de rencontrer l'équipe?",
+        subtitle: "Réservez un appel de découverte, sans obligation.",
+        button: "Réserver un appel"
+      }
+    },
+    contact: {
+      header: {
+        eyebrow: "Contact",
+        title: "Parlons de votre projet",
+        subtitle: "Remplissez le formulaire ci-dessous ou écrivez-nous directement. Nous répondons sous un jour ouvrable."
+      },
+      form: {
+        name: "Nom complet",
+        email: "Courriel",
+        company: "Entreprise (optionnel)",
+        plan: "Forfait qui vous intéresse",
+        planOptions: [
+          "Pas certain",
+          "Core — 199 $/mois",
+          "Plus — 299 $/mois",
+          "Pro — 499 $/mois",
+          "Signature — 600 $+/mois"
+        ],
+        message: "Parlez-nous de votre projet",
+        submit: "Envoyer ma demande",
+        note: "En cliquant, votre client courriel s'ouvrira avec les détails déjà remplis, prêts à envoyer à nexgenweb1@gmail.com.",
+        requiredNote: "Champs requis : nom, courriel et message.",
+        errorRequired: "Veuillez remplir votre nom, votre courriel et votre message avant d'envoyer.",
+        errorEmail: "Veuillez entrer une adresse courriel valide."
+      },
+      info: {
+        title: "Nous joindre",
+        emailLabel: "Courriel",
+        locationLabel: "Basé à",
+        locationValue: "Montréal, Québec",
+        responseLabel: "Délai de réponse",
+        responseValue: "1 jour ouvrable"
+      }
+    },
+    footer: {
+      tagline: "Conception de sites web à Montréal, pour les entreprises d'ici et d'ailleurs au Canada.",
+      navTitle: "Navigation",
+      contactTitle: "Contact",
+      legal: "Conforme à la Loi 25 sur la protection des renseignements personnels.",
+      copyright: "© 2026 NexGen Web Designs. Tous droits réservés."
+    }
+  },
+  en: {
+    meta: {
+      home: {
+        title: "NexGen Web Designs — Montreal Web Design Studio",
+        description: "Montreal-based web design studio. Professional websites on a monthly subscription — no big upfront bill. Serving businesses across Quebec and Canada."
+      },
+      services: {
+        title: "Services & Pricing — NexGen Web Designs",
+        description: "Monthly subscription plans for professional websites in Montreal: Core $199, Plus $299, Pro $499, Signature $600+ CAD."
+      },
+      about: {
+        title: "About — NexGen Web Designs",
+        description: "NexGen Web Designs is a Montreal-based web design studio dedicated to Quebec and Canadian businesses."
+      },
+      contact: {
+        title: "Contact — NexGen Web Designs",
+        description: "Let's talk about your website project. Montreal-based studio serving businesses across Quebec and Canada."
+      }
+    },
+    nav: {
+      home: "Home",
+      services: "Services",
+      about: "About",
+      contact: "Contact",
+      cta: "Book a call",
+      skip: "Skip to content"
+    },
+    home: {
+      hero: {
+        eyebrow: "Web studio based in Montreal",
+        title: "Your business website. Paid month by month.",
+        subtitle: "NexGen Web Designs builds custom websites for businesses in Montreal and across Canada — without a $5,000 bill upfront. One simple monthly subscription, everything included.",
+        ctaPrimary: "See our plans",
+        ctaSecondary: "Book a call",
+        badge: "From $199 CAD / month"
+      },
+      trust: {
+        eyebrow: "Rooted in Montreal",
+        title: "Built here, for here",
+        items: [
+          { title: "100% Quebec-owned", desc: "A Montreal-based team that understands the local market and how you do business." },
+          { title: "Loi 25 compliant", desc: "Your data and your customers' data are handled according to Quebec's privacy law requirements." },
+          { title: "Bilingual service", desc: "We work fluently in both French and English, written and spoken." },
+          { title: "Delivered in 10–14 days", desc: "From our first call to launch, most projects go live within two weeks." }
+        ]
+      },
+      value: {
+        eyebrow: "Our approach",
+        title: "One monthly subscription, not a shock invoice",
+        body: "Traditional agencies charge $3,000 to $10,000 upfront for a website — before maintenance even enters the conversation. With NexGen, you pay one fixed monthly subscription that covers design, hosting, security, and updates. No surprises, no long-term contract.",
+        traditionalTitle: "Traditional agency",
+        traditional: [
+          "$3,000–$10,000 upfront invoice",
+          "Maintenance billed separately, by the hour",
+          "Multi-year contracts",
+          "2–4 month timelines"
+        ],
+        nexgenTitle: "NexGen Web Designs",
+        nexgen: [
+          "Monthly subscription from $199 CAD",
+          "Hosting, security & updates included",
+          "No long-term contract",
+          "Delivered in 10–14 days"
+        ]
+      },
+      servicesTeaser: {
+        eyebrow: "Our plans",
+        title: "A plan for every stage of your growth",
+        link: "See all plans",
+        cards: [
+          { name: "Core", tag: "1 page", price: "$199", period: "/mo", desc: "One high-impact page to get your business online." },
+          { name: "Plus", tag: "Multi-page", price: "$299", period: "/mo", desc: "A complete site to showcase your services in depth." },
+          { name: "Pro", tag: "Automation", price: "$499", period: "/mo", desc: "Automated booking and client follow-up." },
+          { name: "Signature", tag: "Custom", price: "$600+", period: "/mo", desc: "A fully custom web solution." }
+        ]
+      },
+      ctaBanner: {
+        title: "Ready to bring your business online?",
+        subtitle: "Book a free 20-minute call, no strings attached.",
+        button: "Book a call"
+      }
+    },
+    services: {
+      header: {
+        eyebrow: "Our plans",
+        title: "Simple plans, one monthly subscription",
+        subtitle: "Four plans built for every stage of your business. Priced in Canadian dollars, no billing surprises."
+      },
+      plans: [
+        {
+          name: "Core", tag: "1 page", price: "$199", period: "/mo CAD",
+          desc: "One high-impact page to get your business online, fast.",
+          features: [
+            "Single-page, custom design",
+            "Optimized for mobile & tablet",
+            "Built-in contact form",
+            "Hosting & domain included",
+            "Basic local SEO setup"
+          ],
+          cta: "Choose Core"
+        },
+        {
+          name: "Plus", tag: "Multi-page", price: "$299", period: "/mo CAD", badge: "Most popular",
+          desc: "A multi-page site to showcase your services in depth.",
+          features: [
+            "Up to 5 pages (Home, Services, About, etc.)",
+            "Fully custom design",
+            "Forms & Google Maps integration",
+            "Hosting, security & updates included",
+            "Advanced local SEO"
+          ],
+          cta: "Choose Plus"
+        },
+        {
+          name: "Pro", tag: "Automation", price: "$499", period: "/mo CAD",
+          desc: "For businesses ready to automate booking and client follow-up.",
+          features: [
+            "Everything in Plus",
+            "Automated online booking",
+            "Email automations (follow-ups, reminders)",
+            "Integrations with your tools (CRM, calendar)",
+            "Monthly performance reports"
+          ],
+          cta: "Choose Pro"
+        },
+        {
+          name: "Signature", tag: "Custom", price: "$600+", period: "/mo CAD",
+          desc: "A fully custom web solution for complex projects or specific needs.",
+          features: [
+            "Custom architecture & functionality",
+            "Online stores, client portals or web apps",
+            "Advanced integrations (ERP, payment, API)",
+            "Dedicated strategic guidance",
+            "Priority support"
+          ],
+          cta: "Discuss my project"
+        }
+      ],
+      faq: {
+        eyebrow: "Frequently asked",
+        title: "What we get asked the most",
+        items: [
+          { q: "Can I cancel my subscription at any time?", a: "Yes. There's no long-term contract — you can change or cancel your plan with 30 days' notice." },
+          { q: "Are hosting and the domain name included?", a: "Yes, every plan includes hosting, security, and domain management." },
+          { q: "How long until my site goes live?", a: "Most projects are delivered within 10 to 14 business days after our first call." },
+          { q: "What if my needs change?", a: "You can switch plans at any time to match your subscription to your business's growth." }
+        ]
+      },
+      ctaBanner: {
+        title: "Not sure which plan is right for you?",
+        subtitle: "Let's book a call — we'll guide you, no pressure.",
+        button: "Book a call"
+      }
+    },
+    about: {
+      header: {
+        eyebrow: "About",
+        title: "Montreal's web partner for businesses that move forward",
+        subtitle: "We design professional websites for local shops, firms, and entrepreneurs — with agency-level craft and subscription-level simplicity."
+      },
+      story: {
+        eyebrow: "Our story",
+        title: "Why NexGen exists",
+        body: "Too many businesses put off going online because of a five-figure upfront invoice. NexGen Web Designs was founded in Montreal to change that: a professional website, delivered quickly, paid for monthly — like any other essential business tool.",
+        body2: "We work with neighbourhood shops, professional firms, and entrepreneurs across Quebec and Canada, always in both French and English."
+      },
+      process: {
+        eyebrow: "Our process",
+        title: "From first call to launch",
+        steps: [
+          { num: "01", title: "Discover", desc: "A 20-minute call to understand your goals, your customers, and your needs." },
+          { num: "02", title: "Design", desc: "We design a custom mockup aligned with your brand." },
+          { num: "03", title: "Build", desc: "Your site is built, tested on mobile and tablet, and optimized for local SEO." },
+          { num: "04", title: "Launch & support", desc: "We launch your site, then handle ongoing maintenance, security, and updates as part of your subscription." }
+        ]
+      },
+      values: {
+        eyebrow: "How we work",
+        title: "What we don't compromise on",
+        items: [
+          { title: "Bilingual by default", desc: "Every project is built in French and English from day one, not as an afterthought." },
+          { title: "Fast, without shortcuts", desc: "A short timeline doesn't mean rushed work — every site is tested before it goes live." },
+          { title: "Transparent pricing", desc: "One monthly subscription, with taxes and details made clear from the first call." }
+        ]
+      },
+      ctaBanner: {
+        title: "Want to meet the team?",
+        subtitle: "Book a discovery call, no obligation.",
+        button: "Book a call"
+      }
+    },
+    contact: {
+      header: {
+        eyebrow: "Contact",
+        title: "Let's talk about your project",
+        subtitle: "Fill out the form below or reach out directly. We reply within one business day."
+      },
+      form: {
+        name: "Full name",
+        email: "Email",
+        company: "Company (optional)",
+        plan: "Plan you're interested in",
+        planOptions: [
+          "Not sure yet",
+          "Core — $199/mo",
+          "Plus — $299/mo",
+          "Pro — $499/mo",
+          "Signature — $600+/mo"
+        ],
+        message: "Tell us about your project",
+        submit: "Send my request",
+        note: "Clicking this will open your email client with the details pre-filled, ready to send to nexgenweb1@gmail.com.",
+        requiredNote: "Required fields: name, email, and message.",
+        errorRequired: "Please fill in your name, email, and message before sending.",
+        errorEmail: "Please enter a valid email address."
+      },
+      info: {
+        title: "Get in touch",
+        emailLabel: "Email",
+        locationLabel: "Based in",
+        locationValue: "Montreal, Quebec",
+        responseLabel: "Response time",
+        responseValue: "1 business day"
+      }
+    },
+    footer: {
+      tagline: "Web design in Montreal, for businesses here and across Canada.",
+      navTitle: "Navigation",
+      contactTitle: "Contact",
+      legal: "Loi 25 compliant — your data is protected under Quebec privacy law.",
+      copyright: "© 2026 NexGen Web Designs. All rights reserved."
+    }
+  }
+};
+
+function ngGetLang() {
+  return localStorage.getItem("ng_lang") || "fr";
+}
+
+function ngSetLang(lang) {
+  localStorage.setItem("ng_lang", lang);
+}
+
+function ngGetNested(obj, path) {
+  return path.split(".").reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined), obj);
+}
+
+function ngApplyStaticTranslations(lang) {
+  const dict = translations[lang];
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    const val = ngGetNested(dict, key);
+    if (val !== undefined) el.innerHTML = val;
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const val = ngGetNested(dict, key);
+    if (val !== undefined) el.setAttribute("placeholder", val);
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-aria-label");
+    const val = ngGetNested(dict, key);
+    if (val !== undefined) el.setAttribute("aria-label", val);
+  });
+
+  const pageKey = document.body.getAttribute("data-page");
+  if (pageKey && dict.meta && dict.meta[pageKey]) {
+    document.title = dict.meta[pageKey].title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", dict.meta[pageKey].description);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", dict.meta[pageKey].title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute("content", dict.meta[pageKey].description);
+  }
+
+  document.querySelectorAll("[data-lang-label]").forEach((el) => {
+    el.textContent = lang === "fr" ? "EN" : "FR";
+  });
+
+  document.querySelectorAll("[data-lang-active]").forEach((el) => {
+    const isActive = el.getAttribute("data-lang-active") === lang;
+    el.setAttribute("aria-current", isActive ? "true" : "false");
+  });
+}
+
+function ngSwitchLang(nextLang) {
+  ngSetLang(nextLang);
+  ngApplyStaticTranslations(nextLang);
+  document.dispatchEvent(new CustomEvent("ng:langchange", { detail: { lang: nextLang } }));
+}
