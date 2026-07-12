@@ -14,11 +14,14 @@
   <meta property="og:title" content="Services et tarifs — NexGen Web Designs">
   <meta property="og:description" content="Forfaits d'abonnement mensuel pour sites web professionnels à Montréal : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
   <meta property="og:url" content="https://www.nexgenwebdesigns.ca/services.html">
+  <meta property="og:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:locale:alternate" content="en_CA">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +83,7 @@
 
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" aria-label="Principal">
           <a href="index.html" data-i18n="nav.home" class="link-underline pb-1">Accueil</a>
-          <a href="services.html" data-i18n="nav.services" data-lang-active aria-current="page" class="link-underline pb-1">Services</a>
+          <a href="services.html" data-i18n="nav.services" aria-current="page" class="link-underline pb-1">Services</a>
           <a href="about.html" data-i18n="nav.about" class="link-underline pb-1">À propos</a>
           <a href="contact.html" data-i18n="nav.contact" class="link-underline pb-1">Contact</a>
         </nav>
@@ -102,7 +105,7 @@
       <div id="mobile-menu" class="mobile-menu lg:hidden absolute left-4 right-4 mt-2 card-border bg-ivory rounded-3xl p-6 shadow-xl">
         <nav class="flex flex-col gap-5 text-lg font-medium" aria-label="Mobile">
           <a href="index.html" data-i18n="nav.home">Accueil</a>
-          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="services.html" data-i18n="nav.services" aria-current="page" class="link-underline">Services</a>
           <a href="about.html" data-i18n="nav.about">À propos</a>
           <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
@@ -160,7 +163,7 @@
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web à Montréal, pour les entreprises d'ici et d'ailleurs au Canada.</p>
       </div>
       <div>
-        <h3 data-i18n="footer.navTitle" class="text-xs tracking-[0.2em] uppercase text-ivory/50 mb-4">Navigation</h3>
+        <h3 data-i18n="footer.navTitle" class="text-xs tracking-[0.2em] uppercase text-ivory/65 mb-4">Navigation</h3>
         <ul class="space-y-3 text-sm">
           <li><a href="index.html" data-i18n="nav.home" class="text-ivory/85 hover:text-ivory">Accueil</a></li>
           <li><a href="services.html" data-i18n="nav.services" class="text-ivory/85 hover:text-ivory">Services</a></li>
@@ -169,7 +172,7 @@
         </ul>
       </div>
       <div>
-        <h3 data-i18n="footer.contactTitle" class="text-xs tracking-[0.2em] uppercase text-ivory/50 mb-4">Contact</h3>
+        <h3 data-i18n="footer.contactTitle" class="text-xs tracking-[0.2em] uppercase text-ivory/65 mb-4">Contact</h3>
         <ul class="space-y-3 text-sm text-ivory/85">
           <li><a href="mailto:nexgenweb1@gmail.com" class="hover:text-ivory">nexgenweb1@gmail.com</a></li>
           <li>Montréal, Québec</li>
@@ -177,7 +180,7 @@
       </div>
     </div>
     <div class="border-t border-ivory/15">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-ivory/50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-ivory/65">
         <p data-i18n="footer.legal">Conforme à la Loi 25 sur la protection des renseignements personnels.</p>
         <p data-i18n="footer.copyright">© 2026 NexGen Web Designs. Tous droits réservés.</p>
       </div>
@@ -193,9 +196,9 @@
       document.getElementById("plans-grid").innerHTML = t.plans.map((plan) => `
         <div class="relative card-border rounded-2xl p-7 bg-ivory flex flex-col ${plan.badge ? "ring-1 ring-burgundy" : ""}">
           ${plan.badge ? `<span class="absolute -top-3 left-6 bg-burgundy text-ivory text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full">${plan.badge}</span>` : ""}
-          <p class="text-xs tracking-[0.15em] uppercase text-stone mb-3">${plan.tag}</p>
+          <p class="text-xs tracking-[0.15em] uppercase text-muted mb-3">${plan.tag}</p>
           <h3 class="font-display text-2xl font-semibold mb-2">${plan.name}</h3>
-          <p class="font-display text-3xl mb-1">${plan.price}<span class="text-sm text-stone font-sans"> ${plan.period}</span></p>
+          <p class="font-display text-3xl mb-1">${plan.price}<span class="text-sm text-muted font-sans"> ${plan.period}</span></p>
           <p class="text-sm text-muted leading-relaxed my-4">${plan.desc}</p>
           <ul class="space-y-2.5 text-sm mb-7 flex-1">
             ${plan.features.map((f) => `<li class="flex gap-2"><span class="text-burgundy">–</span><span>${f}</span></li>`).join("")}
@@ -204,11 +207,14 @@
         </div>
       `).join("");
 
-      document.getElementById("faq-list").innerHTML = t.faq.items.map((item) => `
-        <div class="border-b card-border py-6">
-          <h3 class="font-display text-lg font-semibold mb-2">${item.q}</h3>
-          <p class="text-sm text-muted leading-relaxed">${item.a}</p>
-        </div>
+      document.getElementById("faq-list").innerHTML = t.faq.items.map((item, i) => `
+        <details class="faq-item border-b card-border py-6" ${i === 0 ? "open" : ""}>
+          <summary class="font-display text-lg font-semibold cursor-pointer list-none flex items-center justify-between gap-4">
+            <span>${item.q}</span>
+            <span class="faq-chevron shrink-0 text-burgundy" aria-hidden="true">+</span>
+          </summary>
+          <p class="text-sm text-muted leading-relaxed mt-3">${item.a}</p>
+        </details>
       `).join("");
     }
 

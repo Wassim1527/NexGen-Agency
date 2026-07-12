@@ -14,19 +14,50 @@
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
     if (hamburger && mobileMenu) {
-      hamburger.addEventListener("click", () => {
-        const isOpen = mobileMenu.classList.toggle("is-open");
-        hamburger.classList.toggle("is-open", isOpen);
-        hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-        document.body.classList.toggle("overflow-hidden", isOpen);
-      });
-      mobileMenu.querySelectorAll("a, button").forEach((el) => {
-        el.addEventListener("click", () => {
-          mobileMenu.classList.remove("is-open");
-          hamburger.classList.remove("is-open");
-          hamburger.setAttribute("aria-expanded", "false");
-          document.body.classList.remove("overflow-hidden");
+      const closeMenu = () => {
+        mobileMenu.classList.remove("is-open");
+        hamburger.classList.remove("is-open");
+        hamburger.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("overflow-hidden");
+      };
+      const openMenu = () => {
+        mobileMenu.classList.add("is-open");
+        hamburger.classList.add("is-open");
+        hamburger.setAttribute("aria-expanded", "true");
+        document.body.classList.add("overflow-hidden");
+        requestAnimationFrame(() => {
+          const firstLink = mobileMenu.querySelector("a");
+          if (firstLink) firstLink.focus();
         });
+      };
+
+      hamburger.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("is-open")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      mobileMenu.querySelectorAll("a, button:not([data-lang-toggle])").forEach((el) => {
+        el.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+          closeMenu();
+          hamburger.focus();
+        }
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          mobileMenu.classList.contains("is-open") &&
+          !mobileMenu.contains(e.target) &&
+          !hamburger.contains(e.target)
+        ) {
+          closeMenu();
+        }
       });
     }
 
@@ -65,14 +96,19 @@
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         status.classList.remove("text-burgundy", "text-muted");
+        ["name", "email", "message"].forEach((field) => contactForm.elements[field].removeAttribute("aria-invalid"));
 
         if (!name || !email || !message) {
+          ["name", "email", "message"].forEach((field) => {
+            if (!contactForm.elements[field].value.trim()) contactForm.elements[field].setAttribute("aria-invalid", "true");
+          });
           status.textContent = dict.errorRequired;
           status.classList.add("text-burgundy");
           status.dataset.touched = "1";
           return;
         }
         if (!emailPattern.test(email)) {
+          contactForm.elements["email"].setAttribute("aria-invalid", "true");
           status.textContent = dict.errorEmail;
           status.classList.add("text-burgundy");
           status.dataset.touched = "1";

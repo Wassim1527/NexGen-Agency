@@ -515,11 +515,6 @@ function ngApplyStaticTranslations(lang) {
   document.querySelectorAll("[data-lang-label]").forEach((el) => {
     el.textContent = lang === "fr" ? "EN" : "FR";
   });
-
-  document.querySelectorAll("[data-lang-active]").forEach((el) => {
-    const isActive = el.getAttribute("data-lang-active") === lang;
-    el.setAttribute("aria-current", isActive ? "true" : "false");
-  });
 }
 
 function ngSwitchLang(nextLang) {
