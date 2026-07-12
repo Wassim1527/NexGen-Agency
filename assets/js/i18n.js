@@ -2,20 +2,20 @@ const translations = {
   fr: {
     meta: {
       home: {
-        title: "NexGen Web Designs — Conception de sites web à Montréal",
-        description: "Studio de conception web basé à Montréal. Sites professionnels par abonnement mensuel, sans gros montant de départ. Desservons les entreprises du Québec et du Canada."
+        title: "NexGen Web Designs — Conception de sites web partout au Canada",
+        description: "Studio de conception web canadien. Sites professionnels par abonnement mensuel, sans gros montant de départ. Au service des entreprises partout au pays."
       },
       services: {
         title: "Services et tarifs — NexGen Web Designs",
-        description: "Forfaits d'abonnement mensuel pour sites web professionnels à Montréal : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
+        description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
       },
       about: {
         title: "À propos — NexGen Web Designs",
-        description: "NexGen Web Designs est un studio de conception web basé à Montréal, dédié aux entreprises québécoises et canadiennes."
+        description: "NexGen Web Designs est un studio de conception web canadien, dédié aux entreprises d'ici, partout au pays."
       },
       contact: {
         title: "Contact — NexGen Web Designs",
-        description: "Discutons de votre projet de site web. Studio basé à Montréal, au service des entreprises du Québec et du Canada."
+        description: "Discutons de votre projet de site web. Studio canadien, au service des entreprises partout au pays."
       }
     },
     nav: {
@@ -28,20 +28,20 @@ const translations = {
     },
     home: {
       hero: {
-        eyebrow: "Studio web basé à Montréal",
+        eyebrow: "Studio web canadien",
         title: "Votre site web professionnel. Payé mois par mois.",
-        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises de Montréal et d'ailleurs au Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
+        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
         ctaPrimary: "Voir nos forfaits",
         ctaSecondary: "Réserver un appel",
         badge: "Dès 199 $ CAD / mois"
       },
       trust: {
-        eyebrow: "Ancrés à Montréal",
-        title: "Fait ici, pour ici",
+        eyebrow: "Fièrement canadien",
+        title: "Conçu au Canada, pour le Canada",
         items: [
-          { title: "Entreprise 100 % québécoise", desc: "Une équipe basée à Montréal qui comprend le marché d'ici et vos réalités d'affaires." },
-          { title: "Conforme à la Loi 25", desc: "Vos données et celles de vos clients sont traitées selon les exigences québécoises en matière de protection des renseignements personnels." },
-          { title: "Service bilingue", desc: "Nous travaillons aussi bien en français qu'en anglais, à l'écrit comme à l'oral." },
+          { title: "Entreprise 100 % canadienne", desc: "Une équipe qui comprend le marché canadien et vos réalités d'affaires, d'un océan à l'autre." },
+          { title: "Confidentialité respectée", desc: "Vos renseignements et ceux de vos clients sont traités selon les normes canadiennes de protection de la vie privée." },
+          { title: "Facturé en dollars canadiens", desc: "Aucune surprise de taux de change : vos factures sont toujours en CAD, mois après mois." },
           { title: "Livraison en 10 à 14 jours", desc: "De la première rencontre à la mise en ligne, la majorité de nos projets sont livrés en deux semaines." }
         ]
       },
@@ -117,6 +117,7 @@ const translations = {
           desc: "Pour les entreprises qui veulent automatiser leur prise de rendez-vous et leur suivi de clientèle.",
           features: [
             "Tout le contenu du forfait Plus",
+            "Support bilingue (FR/EN) inclus par défaut",
             "Prise de rendez-vous en ligne automatisée",
             "Automatisations courriel (suivi, rappels)",
             "Intégration à vos outils (CRM, calendrier)",
@@ -156,14 +157,14 @@ const translations = {
     about: {
       header: {
         eyebrow: "À propos",
-        title: "Le partenaire web de Montréal pour les entreprises qui avancent",
-        subtitle: "Nous concevons des sites web professionnels pour les commerces, cabinets et entrepreneurs d'ici, avec la rigueur d'une agence et la simplicité d'un abonnement."
+        title: "Le partenaire web canadien pour les entreprises qui avancent",
+        subtitle: "Nous concevons des sites web professionnels pour les commerces, cabinets et entrepreneurs d'un bout à l'autre du Canada, avec la rigueur d'une agence et la simplicité d'un abonnement."
       },
       story: {
         eyebrow: "Notre histoire",
         title: "Pourquoi NexGen existe",
-        body: "Trop d'entreprises repoussent leur présence en ligne à cause d'une facture initiale de plusieurs milliers de dollars. NexGen Web Designs a été fondée à Montréal pour changer cette réalité : un site professionnel, livré rapidement, payé mensuellement — comme n'importe quel autre outil d'affaires essentiel.",
-        body2: "Nous travaillons avec des commerces de quartier, des cabinets professionnels et des entrepreneurs partout au Québec et au Canada, toujours en français et en anglais."
+        body: "Trop d'entreprises repoussent leur présence en ligne à cause d'une facture initiale de plusieurs milliers de dollars. NexGen Web Designs a été fondée pour changer cette réalité : un site professionnel, livré rapidement, payé mensuellement — comme n'importe quel autre outil d'affaires essentiel.",
+        body2: "Nous travaillons avec des commerces de quartier, des cabinets professionnels et des entrepreneurs partout au Canada, toujours en français et en anglais."
       },
       process: {
         eyebrow: "Notre processus",
@@ -179,7 +180,7 @@ const translations = {
         eyebrow: "Notre façon de travailler",
         title: "Ce sur quoi nous ne transigeons pas",
         items: [
-          { title: "Bilingue par défaut", desc: "Chaque projet est pensé en français et en anglais dès le départ, pas comme une réflexion après coup." },
+          { title: "Communication directe", desc: "Vous parlez directement à la personne qui construit votre site, pas à un intermédiaire." },
           { title: "Rapide, sans raccourcis", desc: "Des délais courts ne veulent pas dire du travail bâclé : chaque site est testé avant sa mise en ligne." },
           { title: "Prix transparent", desc: "Un seul abonnement mensuel, taxes et détails clairs dès le premier appel." }
         ]
@@ -218,37 +219,38 @@ const translations = {
       info: {
         title: "Nous joindre",
         emailLabel: "Courriel",
-        locationLabel: "Basé à",
-        locationValue: "Montréal, Québec",
+        locationLabel: "Zone desservie",
+        locationValue: "Partout au Canada",
         responseLabel: "Délai de réponse",
         responseValue: "1 jour ouvrable"
       }
     },
     footer: {
-      tagline: "Conception de sites web à Montréal, pour les entreprises d'ici et d'ailleurs au Canada.",
+      tagline: "Conception de sites web pour les entreprises d'un bout à l'autre du Canada.",
       navTitle: "Navigation",
       contactTitle: "Contact",
-      legal: "Conforme à la Loi 25 sur la protection des renseignements personnels.",
+      locationLine: "Partout au Canada",
+      legal: "Vos renseignements personnels sont traités de façon sécuritaire et confidentielle.",
       copyright: "© 2026 NexGen Web Designs. Tous droits réservés."
     }
   },
   en: {
     meta: {
       home: {
-        title: "NexGen Web Designs — Montreal Web Design Studio",
-        description: "Montreal-based web design studio. Professional websites on a monthly subscription — no big upfront bill. Serving businesses across Quebec and Canada."
+        title: "NexGen Web Designs — Canadian Web Design Studio",
+        description: "Canadian web design studio. Professional websites on a monthly subscription — no big upfront bill. Serving businesses nationwide across Canada."
       },
       services: {
         title: "Services & Pricing — NexGen Web Designs",
-        description: "Monthly subscription plans for professional websites in Montreal: Core $199, Plus $299, Pro $499, Signature $600+ CAD."
+        description: "Monthly subscription plans for professional websites across Canada: Core $199, Plus $299, Pro $499, Signature $600+ CAD."
       },
       about: {
         title: "About — NexGen Web Designs",
-        description: "NexGen Web Designs is a Montreal-based web design studio dedicated to Quebec and Canadian businesses."
+        description: "NexGen Web Designs is a Canadian web design studio dedicated to businesses nationwide."
       },
       contact: {
         title: "Contact — NexGen Web Designs",
-        description: "Let's talk about your website project. Montreal-based studio serving businesses across Quebec and Canada."
+        description: "Let's talk about your website project. A Canadian studio serving businesses nationwide."
       }
     },
     nav: {
@@ -261,20 +263,20 @@ const translations = {
     },
     home: {
       hero: {
-        eyebrow: "Web studio based in Montreal",
+        eyebrow: "A Canadian web studio",
         title: "Your business website. Paid month by month.",
-        subtitle: "NexGen Web Designs builds custom websites for businesses in Montreal and across Canada — without a $5,000 bill upfront. One simple monthly subscription, everything included.",
+        subtitle: "NexGen Web Designs builds custom websites for businesses from coast to coast — without a $5,000 bill upfront. One simple monthly subscription, everything included.",
         ctaPrimary: "See our plans",
         ctaSecondary: "Book a call",
         badge: "From $199 CAD / month"
       },
       trust: {
-        eyebrow: "Rooted in Montreal",
-        title: "Built here, for here",
+        eyebrow: "Proudly Canadian",
+        title: "Built in Canada, for Canada",
         items: [
-          { title: "100% Quebec-owned", desc: "A Montreal-based team that understands the local market and how you do business." },
-          { title: "Loi 25 compliant", desc: "Your data and your customers' data are handled according to Quebec's privacy law requirements." },
-          { title: "Bilingual service", desc: "We work fluently in both French and English, written and spoken." },
+          { title: "100% Canadian-owned", desc: "A team that understands the Canadian market and how you do business, from coast to coast." },
+          { title: "Privacy-first", desc: "Your data and your customers' data are handled according to Canadian privacy standards." },
+          { title: "Billed in Canadian dollars", desc: "No surprise currency conversion — your invoices are always in CAD, month after month." },
           { title: "Delivered in 10–14 days", desc: "From our first call to launch, most projects go live within two weeks." }
         ]
       },
@@ -350,6 +352,7 @@ const translations = {
           desc: "For businesses ready to automate booking and client follow-up.",
           features: [
             "Everything in Plus",
+            "Bilingual (FR/EN) support included by default",
             "Automated online booking",
             "Email automations (follow-ups, reminders)",
             "Integrations with your tools (CRM, calendar)",
@@ -389,14 +392,14 @@ const translations = {
     about: {
       header: {
         eyebrow: "About",
-        title: "Montreal's web partner for businesses that move forward",
-        subtitle: "We design professional websites for local shops, firms, and entrepreneurs — with agency-level craft and subscription-level simplicity."
+        title: "Canada's web partner for businesses that move forward",
+        subtitle: "We design professional websites for shops, firms, and entrepreneurs from coast to coast — with agency-level craft and subscription-level simplicity."
       },
       story: {
         eyebrow: "Our story",
         title: "Why NexGen exists",
-        body: "Too many businesses put off going online because of a five-figure upfront invoice. NexGen Web Designs was founded in Montreal to change that: a professional website, delivered quickly, paid for monthly — like any other essential business tool.",
-        body2: "We work with neighbourhood shops, professional firms, and entrepreneurs across Quebec and Canada, always in both French and English."
+        body: "Too many businesses put off going online because of a five-figure upfront invoice. NexGen Web Designs was founded to change that: a professional website, delivered quickly, paid for monthly — like any other essential business tool.",
+        body2: "We work with neighbourhood shops, professional firms, and entrepreneurs across Canada, always in both French and English."
       },
       process: {
         eyebrow: "Our process",
@@ -412,7 +415,7 @@ const translations = {
         eyebrow: "How we work",
         title: "What we don't compromise on",
         items: [
-          { title: "Bilingual by default", desc: "Every project is built in French and English from day one, not as an afterthought." },
+          { title: "Direct communication", desc: "You talk directly to the person building your site, not a middleman." },
           { title: "Fast, without shortcuts", desc: "A short timeline doesn't mean rushed work — every site is tested before it goes live." },
           { title: "Transparent pricing", desc: "One monthly subscription, with taxes and details made clear from the first call." }
         ]
@@ -451,17 +454,18 @@ const translations = {
       info: {
         title: "Get in touch",
         emailLabel: "Email",
-        locationLabel: "Based in",
-        locationValue: "Montreal, Quebec",
+        locationLabel: "Service area",
+        locationValue: "Nationwide across Canada",
         responseLabel: "Response time",
         responseValue: "1 business day"
       }
     },
     footer: {
-      tagline: "Web design in Montreal, for businesses here and across Canada.",
+      tagline: "Web design for businesses from coast to coast across Canada.",
       navTitle: "Navigation",
       contactTitle: "Contact",
-      legal: "Loi 25 compliant — your data is protected under Quebec privacy law.",
+      locationLine: "Nationwide across Canada",
+      legal: "Your personal information is handled securely and kept confidential.",
       copyright: "© 2026 NexGen Web Designs. All rights reserved."
     }
   }
