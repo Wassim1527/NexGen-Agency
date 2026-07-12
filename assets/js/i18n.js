@@ -7,7 +7,7 @@ const translations = {
       },
       services: {
         title: "Services et tarifs — NexGen Web Designs",
-        description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
+        description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
       },
       about: {
         title: "À propos — NexGen Web Designs",
@@ -30,10 +30,10 @@ const translations = {
       hero: {
         eyebrow: "Studio web canadien",
         title: "Votre site web professionnel. Payé mois par mois.",
-        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
+        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
         ctaPrimary: "Voir nos forfaits",
         ctaSecondary: "Réserver un appel",
-        badge: "Dès 199 $ CAD / mois"
+        badge: "Dès 199 $ CAD / mois"
       },
       trust: {
         eyebrow: "Fièrement canadien",
@@ -48,17 +48,17 @@ const translations = {
       value: {
         eyebrow: "Notre approche",
         title: "Un abonnement mensuel, pas une facture choc",
-        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web — avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
+        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web — avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
         traditionalTitle: "Agence traditionnelle",
         traditional: [
-          "Facture initiale de 3 000 $ à 10 000 $",
+          "Facture initiale de 3 000 $ à 10 000 $",
           "Entretien facturé séparément, à l'heure",
           "Contrat de plusieurs années",
           "Délais de 2 à 4 mois"
         ],
         nexgenTitle: "NexGen Web Designs",
         nexgen: [
-          "Abonnement mensuel dès 199 $ CAD",
+          "Abonnement mensuel dès 199 $ CAD",
           "Hébergement, sécurité et mises à jour inclus",
           "Aucun contrat à long terme",
           "Livraison en 10 à 14 jours"
@@ -69,10 +69,10 @@ const translations = {
         title: "Un forfait pour chaque étape de votre croissance",
         link: "Voir tous les forfaits",
         cards: [
-          { name: "Core", tag: "1 page", price: "199 $", period: "/mois", desc: "Une page percutante pour lancer votre présence en ligne." },
-          { name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois", desc: "Un site complet pour présenter vos services en détail." },
-          { name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois", desc: "Rendez-vous et suivi client automatisés." },
-          { name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois", desc: "Une solution web entièrement personnalisée." }
+          { name: "Core", tag: "1 page", price: "199 $", period: "/mois", desc: "Une page percutante pour lancer votre présence en ligne." },
+          { name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois", desc: "Un site complet pour présenter vos services en détail." },
+          { name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois", desc: "Rendez-vous et suivi client automatisés." },
+          { name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois", desc: "Une solution web entièrement personnalisée." }
         ]
       },
       ctaBanner: {
@@ -89,7 +89,7 @@ const translations = {
       },
       plans: [
         {
-          name: "Core", tag: "1 page", price: "199 $", period: "/mois CAD",
+          name: "Core", tag: "1 page", price: "199 $", period: "/mois CAD",
           desc: "Une page web percutante pour lancer votre présence en ligne rapidement.",
           features: [
             "Site une page, design sur mesure",
@@ -101,7 +101,7 @@ const translations = {
           cta: "Choisir Core"
         },
         {
-          name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois CAD", badge: "Le plus populaire",
+          name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois CAD", badge: "Le plus populaire",
           desc: "Un site multi-pages pour présenter vos services en détail.",
           features: [
             "Jusqu'à 5 pages (Accueil, Services, À propos, etc.)",
@@ -113,7 +113,7 @@ const translations = {
           cta: "Choisir Plus"
         },
         {
-          name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois CAD",
+          name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois CAD",
           desc: "Pour les entreprises qui veulent automatiser leur prise de rendez-vous et leur suivi de clientèle.",
           features: [
             "Tout le contenu du forfait Plus",
@@ -126,7 +126,7 @@ const translations = {
           cta: "Choisir Pro"
         },
         {
-          name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois CAD",
+          name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois CAD",
           desc: "Une solution web entièrement sur mesure pour les projets complexes ou les besoins particuliers.",
           features: [
             "Architecture et fonctionnalités sur mesure",
@@ -204,10 +204,10 @@ const translations = {
         plan: "Forfait qui vous intéresse",
         planOptions: [
           "Pas certain",
-          "Core — 199 $/mois",
-          "Plus — 299 $/mois",
-          "Pro — 499 $/mois",
-          "Signature — 600 $+/mois"
+          "Core — 199 $/mois",
+          "Plus — 299 $/mois",
+          "Pro — 499 $/mois",
+          "Signature — 600 $+/mois"
         ],
         message: "Parlez-nous de votre projet",
         submit: "Envoyer ma demande",

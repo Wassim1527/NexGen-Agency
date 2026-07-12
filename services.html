@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services et tarifs — NexGen Web Designs</title>
-  <meta name="description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
+  <meta name="description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="prix site web Canada, forfait site web, abonnement web design, NexGen Web Designs">
   <link rel="canonical" href="https://www.nexgenwebdesigns.ca/services.html">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
   <meta property="og:title" content="Services et tarifs — NexGen Web Designs">
-  <meta property="og:description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
+  <meta property="og:description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
   <meta property="og:url" content="https://www.nexgenwebdesigns.ca/services.html">
   <meta property="og:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
   <meta property="og:locale" content="fr_CA">
@@ -37,8 +37,8 @@
             stone: '#86806F', muted: '#4B473C', burgundy: '#7A2331'
           },
           fontFamily: {
-            display: ['Bodoni Moda', 'ui-serif', 'Georgia', 'serif'],
-            sans: ['"Inter Tight"', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            display: ['DM Serif Display', 'ui-serif', 'Georgia', 'serif'],
+            sans: ['"Lato"', 'ui-sans-serif', 'system-ui', 'sans-serif']
           }
         }
       }
@@ -184,7 +184,7 @@
           ${plan.badge ? `<span class="absolute -top-3 left-6 bg-burgundy text-ivory text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full">${plan.badge}</span>` : ""}
           <p class="text-xs tracking-[0.15em] uppercase text-muted mb-3">${plan.tag}</p>
           <h3 class="font-display text-2xl font-semibold mb-2">${plan.name}</h3>
-          <p class="font-display text-3xl mb-1">${plan.price}<span class="text-sm text-muted font-sans"> ${plan.period}</span></p>
+          <p class="font-display text-3xl mb-1 whitespace-nowrap">${plan.price}<span class="text-sm text-muted font-sans"> ${plan.period}</span></p>
           <p class="text-sm text-muted leading-relaxed my-4">${plan.desc}</p>
           <ul class="space-y-2.5 text-sm mb-7 flex-1">
             ${plan.features.map((f) => `<li class="flex gap-2"><span class="text-burgundy">–</span><span>${f}</span></li>`).join("")}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,500;1,6..96,600&family=Inter+Tight:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700;900&display=swap');
 
 :root {
   --ink: #0B0B0B;
@@ -28,11 +28,11 @@ html {
 body {
   background-color: var(--ivory);
   color: var(--ink);
-  font-family: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Lato', ui-sans-serif, system-ui, sans-serif;
 }
 
 .font-display {
-  font-family: 'Bodoni Moda', ui-serif, Georgia, serif;
+  font-family: 'DM Serif Display', ui-serif, Georgia, serif;
   font-feature-settings: 'ss01' 1;
 }
 
@@ -83,14 +83,16 @@ footer :focus-visible {
   transform: translateY(1px);
 }
 
-.btn-outline {
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  transition: background-color 180ms ease, color 180ms ease;
-}
-.btn-outline:hover {
-  background-color: var(--ink);
+.btn-secondary {
+  background-color: var(--burgundy);
   color: var(--ivory);
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+.btn-secondary:hover {
+  background-color: var(--burgundy-dark);
+}
+.btn-secondary:active {
+  transform: translateY(1px);
 }
 
 .link-underline {
@@ -141,7 +143,7 @@ header .link-underline[aria-current="page"] {
     transition: none;
   }
   .btn-primary,
-  .btn-outline,
+  .btn-secondary,
   .link-underline {
     transition: none;
   }
@@ -179,7 +181,7 @@ header .link-underline[aria-current="page"] {
 }
 
 .faq-item .faq-chevron {
-  font-family: 'Bodoni Moda', ui-serif, Georgia, serif;
+  font-family: 'DM Serif Display', ui-serif, Georgia, serif;
   font-size: 1.5rem;
   line-height: 1;
   transition: transform 220ms ease;
