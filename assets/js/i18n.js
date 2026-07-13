@@ -2,19 +2,19 @@ const translations = {
   fr: {
     meta: {
       home: {
-        title: "NexGen Web Designs — Conception de sites web partout au Canada",
+        title: "NexGen Web Designs | Conception de sites web partout au Canada",
         description: "Studio de conception web canadien. Sites professionnels par abonnement mensuel, sans gros montant de départ. Au service des entreprises partout au pays."
       },
       services: {
-        title: "Services et tarifs — NexGen Web Designs",
+        title: "Services et tarifs | NexGen Web Designs",
         description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
       },
       about: {
-        title: "À propos — NexGen Web Designs",
+        title: "À propos | NexGen Web Designs",
         description: "NexGen Web Designs est un studio de conception web canadien, dédié aux entreprises d'ici, partout au pays."
       },
       contact: {
-        title: "Contact — NexGen Web Designs",
+        title: "Contact | NexGen Web Designs",
         description: "Discutons de votre projet de site web. Studio canadien, au service des entreprises partout au pays."
       }
     },
@@ -30,7 +30,7 @@ const translations = {
       hero: {
         eyebrow: "Studio web canadien",
         title: "Votre site web professionnel. Payé mois par mois.",
-        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
+        subtitle: "NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada, sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.",
         ctaPrimary: "Voir nos forfaits",
         ctaSecondary: "Réserver un appel",
         badge: "Dès 199 $ CAD / mois"
@@ -48,7 +48,7 @@ const translations = {
       value: {
         eyebrow: "Notre approche",
         title: "Un abonnement mensuel, pas une facture choc",
-        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web — avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
+        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web, avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
         traditionalTitle: "Agence traditionnelle",
         traditional: [
           "Facture initiale de 3 000 $ à 10 000 $",
@@ -163,7 +163,7 @@ const translations = {
       story: {
         eyebrow: "Notre histoire",
         title: "Pourquoi NexGen existe",
-        body: "Trop d'entreprises repoussent leur présence en ligne à cause d'une facture initiale de plusieurs milliers de dollars. NexGen Web Designs a été fondée pour changer cette réalité : un site professionnel, livré rapidement, payé mensuellement — comme n'importe quel autre outil d'affaires essentiel.",
+        body: "Trop d'entreprises repoussent leur présence en ligne à cause d'une facture initiale de plusieurs milliers de dollars. NexGen Web Designs a été fondée pour changer cette réalité : un site professionnel, livré rapidement, payé mensuellement, comme n'importe quel autre outil d'affaires essentiel.",
         body2: "Nous travaillons avec des commerces de quartier, des cabinets professionnels et des entrepreneurs partout au Canada, toujours en français et en anglais."
       },
       process: {
@@ -204,10 +204,10 @@ const translations = {
         plan: "Forfait qui vous intéresse",
         planOptions: [
           "Pas certain",
-          "Core — 199 $/mois",
-          "Plus — 299 $/mois",
-          "Pro — 499 $/mois",
-          "Signature — 600 $+/mois"
+          "Core (199 $/mois)",
+          "Plus (299 $/mois)",
+          "Pro (499 $/mois)",
+          "Signature (600 $+/mois)"
         ],
         message: "Parlez-nous de votre projet",
         submit: "Envoyer ma demande",
@@ -237,19 +237,19 @@ const translations = {
   en: {
     meta: {
       home: {
-        title: "NexGen Web Designs — Canadian Web Design Studio",
-        description: "Canadian web design studio. Professional websites on a monthly subscription — no big upfront bill. Serving businesses nationwide across Canada."
+        title: "NexGen Web Designs | Canadian Web Design Studio",
+        description: "Canadian web design studio. Professional websites on a monthly subscription, no big upfront bill. Serving businesses nationwide across Canada."
       },
       services: {
-        title: "Services & Pricing — NexGen Web Designs",
+        title: "Services & Pricing | NexGen Web Designs",
         description: "Monthly subscription plans for professional websites across Canada: Core $199, Plus $299, Pro $499, Signature $600+ CAD."
       },
       about: {
-        title: "About — NexGen Web Designs",
+        title: "About | NexGen Web Designs",
         description: "NexGen Web Designs is a Canadian web design studio dedicated to businesses nationwide."
       },
       contact: {
-        title: "Contact — NexGen Web Designs",
+        title: "Contact | NexGen Web Designs",
         description: "Let's talk about your website project. A Canadian studio serving businesses nationwide."
       }
     },
@@ -265,7 +265,7 @@ const translations = {
       hero: {
         eyebrow: "A Canadian web studio",
         title: "Your business website. Paid month by month.",
-        subtitle: "NexGen Web Designs builds custom websites for businesses from coast to coast — without a $5,000 bill upfront. One simple monthly subscription, everything included.",
+        subtitle: "NexGen Web Designs builds custom websites for businesses from coast to coast, without a $5,000 bill upfront. One simple monthly subscription, everything included.",
         ctaPrimary: "See our plans",
         ctaSecondary: "Book a call",
         badge: "From $199 CAD / month"
@@ -276,14 +276,14 @@ const translations = {
         items: [
           { title: "100% Canadian-owned", desc: "A team that understands the Canadian market and how you do business, from coast to coast." },
           { title: "Privacy-first", desc: "Your data and your customers' data are handled according to Canadian privacy standards." },
-          { title: "Billed in Canadian dollars", desc: "No surprise currency conversion — your invoices are always in CAD, month after month." },
+          { title: "Billed in Canadian dollars", desc: "No surprise currency conversion: your invoices are always in CAD, month after month." },
           { title: "Delivered in 10–14 days", desc: "From our first call to launch, most projects go live within two weeks." }
         ]
       },
       value: {
         eyebrow: "Our approach",
         title: "One monthly subscription, not a shock invoice",
-        body: "Traditional agencies charge $3,000 to $10,000 upfront for a website — before maintenance even enters the conversation. With NexGen, you pay one fixed monthly subscription that covers design, hosting, security, and updates. No surprises, no long-term contract.",
+        body: "Traditional agencies charge $3,000 to $10,000 upfront for a website, before maintenance even enters the conversation. With NexGen, you pay one fixed monthly subscription that covers design, hosting, security, and updates. No surprises, no long-term contract.",
         traditionalTitle: "Traditional agency",
         traditional: [
           "$3,000–$10,000 upfront invoice",
@@ -377,7 +377,7 @@ const translations = {
         eyebrow: "Frequently asked",
         title: "What we get asked the most",
         items: [
-          { q: "Can I cancel my subscription at any time?", a: "Yes. There's no long-term contract — you can change or cancel your plan with 30 days' notice." },
+          { q: "Can I cancel my subscription at any time?", a: "Yes. There's no long-term contract: you can change or cancel your plan with 30 days' notice." },
           { q: "Are hosting and the domain name included?", a: "Yes, every plan includes hosting, security, and domain management." },
           { q: "How long until my site goes live?", a: "Most projects are delivered within 10 to 14 business days after our first call." },
           { q: "What if my needs change?", a: "You can switch plans at any time to match your subscription to your business's growth." }
@@ -385,7 +385,7 @@ const translations = {
       },
       ctaBanner: {
         title: "Not sure which plan is right for you?",
-        subtitle: "Let's book a call — we'll guide you, no pressure.",
+        subtitle: "Let's book a call and we'll guide you, no pressure.",
         button: "Book a call"
       }
     },
@@ -393,12 +393,12 @@ const translations = {
       header: {
         eyebrow: "About",
         title: "Canada's web partner for businesses that move forward",
-        subtitle: "We design professional websites for shops, firms, and entrepreneurs from coast to coast — with agency-level craft and subscription-level simplicity."
+        subtitle: "We design professional websites for shops, firms, and entrepreneurs from coast to coast, with agency-level craft and subscription-level simplicity."
       },
       story: {
         eyebrow: "Our story",
         title: "Why NexGen exists",
-        body: "Too many businesses put off going online because of a five-figure upfront invoice. NexGen Web Designs was founded to change that: a professional website, delivered quickly, paid for monthly — like any other essential business tool.",
+        body: "Too many businesses put off going online because of a five-figure upfront invoice. NexGen Web Designs was founded to change that: a professional website, delivered quickly, paid for monthly, like any other essential business tool.",
         body2: "We work with neighbourhood shops, professional firms, and entrepreneurs across Canada, always in both French and English."
       },
       process: {
@@ -416,7 +416,7 @@ const translations = {
         title: "What we don't compromise on",
         items: [
           { title: "Direct communication", desc: "You talk directly to the person building your site, not a middleman." },
-          { title: "Fast, without shortcuts", desc: "A short timeline doesn't mean rushed work — every site is tested before it goes live." },
+          { title: "Fast, without shortcuts", desc: "A short timeline doesn't mean rushed work: every site is tested before it goes live." },
           { title: "Transparent pricing", desc: "One monthly subscription, with taxes and details made clear from the first call." }
         ]
       },
@@ -439,10 +439,10 @@ const translations = {
         plan: "Plan you're interested in",
         planOptions: [
           "Not sure yet",
-          "Core — $199/mo",
-          "Plus — $299/mo",
-          "Pro — $499/mo",
-          "Signature — $600+/mo"
+          "Core ($199/mo)",
+          "Plus ($299/mo)",
+          "Pro ($499/mo)",
+          "Signature ($600+/mo)"
         ],
         message: "Tell us about your project",
         submit: "Send my request",

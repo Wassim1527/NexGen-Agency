@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services et tarifs — NexGen Web Designs</title>
+  <title>Services et tarifs | NexGen Web Designs</title>
   <meta name="description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="prix site web Canada, forfait site web, abonnement web design, NexGen Web Designs">
@@ -11,7 +11,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
-  <meta property="og:title" content="Services et tarifs — NexGen Web Designs">
+  <meta property="og:title" content="Services et tarifs | NexGen Web Designs">
   <meta property="og:description" content="Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD.">
   <meta property="og:url" content="https://www.nexgenwebdesigns.ca/services.html">
   <meta property="og:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
@@ -70,7 +70,7 @@
   <header class="nav-bar sticky top-0 z-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3.5">
-        <a href="index.html" aria-label="NexGen Web Designs — Accueil" class="shrink-0">
+        <a href="index.html" aria-label="NexGen Web Designs, accueil" class="shrink-0">
           <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
         </a>
 
@@ -120,7 +120,7 @@
     </section>
 
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24" data-reveal>
-      <div id="plans-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      <div id="plans-grid" class="flex flex-wrap items-stretch gap-6"></div>
     </section>
 
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20" data-reveal>
@@ -143,7 +143,7 @@
   <footer class="bg-ink text-ivory">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
-        <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs — Accueil">
+        <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs, accueil">
           <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web pour les entreprises d'un bout à l'autre du Canada.</p>
@@ -180,16 +180,18 @@
       const t = translations[lang].services;
 
       document.getElementById("plans-grid").innerHTML = t.plans.map((plan) => `
-        <div class="relative rounded-2xl p-8 bg-parchment flex flex-col ${plan.badge ? "ring-2 ring-burgundy" : ""}">
+        <div class="relative rounded-2xl p-8 bg-parchment flex flex-col basis-full sm:basis-[calc(50%-0.75rem)] lg:basis-[calc(25%-1.125rem)] ${plan.badge ? "ring-2 ring-burgundy" : ""}">
           ${plan.badge ? `<span class="absolute -top-3 left-6 bg-burgundy text-ivory text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full">${plan.badge}</span>` : ""}
           <p class="text-xs tracking-[0.15em] uppercase text-muted mb-3">${plan.tag}</p>
           <h3 class="font-display text-2xl font-semibold mb-2">${plan.name}</h3>
           <p class="font-display text-3xl mb-1 whitespace-nowrap">${plan.price}<span class="text-sm text-muted font-sans"> ${plan.period}</span></p>
-          <p class="text-sm text-muted leading-relaxed my-4">${plan.desc}</p>
-          <ul class="space-y-2.5 text-sm mb-7 flex-1">
-            ${plan.features.map((f) => `<li class="flex gap-2"><span class="text-burgundy">–</span><span>${f}</span></li>`).join("")}
+          <div class="flex-grow my-4">
+            <p class="text-sm text-muted leading-relaxed">${plan.desc}</p>
+          </div>
+          <ul class="space-y-2.5 text-sm mb-7">
+            ${plan.features.map((f) => `<li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">&check;</span><span>${f}</span></li>`).join("")}
           </ul>
-          <a href="contact.html?plan=${encodeURIComponent(plan.name)}" class="btn-primary text-center text-sm font-semibold rounded-full px-5 py-3">${plan.cta}</a>
+          <a href="contact.html?plan=${encodeURIComponent(plan.name)}" class="btn-primary text-center text-sm font-semibold rounded-full px-5 py-3 mt-auto">${plan.cta}</a>
         </div>
       `).join("");
 

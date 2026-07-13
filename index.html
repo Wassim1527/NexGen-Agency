@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexGen Web Designs — Conception de sites web partout au Canada</title>
+  <title>NexGen Web Designs | Conception de sites web partout au Canada</title>
   <meta name="description" content="Studio de conception web canadien. Sites professionnels par abonnement mensuel, sans gros montant de départ. Au service des entreprises partout au pays.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="conception web Canada, agence web canadienne, création de site web, NexGen Web Designs, site web par abonnement">
@@ -11,7 +11,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
-  <meta property="og:title" content="NexGen Web Designs — Conception de sites web partout au Canada">
+  <meta property="og:title" content="NexGen Web Designs | Conception de sites web partout au Canada">
   <meta property="og:description" content="Sites professionnels par abonnement mensuel, sans gros montant de départ. Studio canadien.">
   <meta property="og:url" content="https://www.nexgenwebdesigns.ca/">
   <meta property="og:image" content="https://www.nexgenwebdesigns.ca/assets/img/og-image.png">
@@ -74,7 +74,7 @@
   <header class="nav-bar sticky top-0 z-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3.5">
-        <a href="index.html" aria-label="NexGen Web Designs — Accueil" class="shrink-0">
+        <a href="index.html" aria-label="NexGen Web Designs, accueil" class="shrink-0">
           <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
         </a>
 
@@ -128,7 +128,7 @@
         Votre site web professionnel. Payé mois par mois.
       </h1>
       <p data-i18n="home.hero.subtitle" class="mt-7 text-lg text-muted max-w-xl leading-relaxed">
-        NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada — sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.
+        NexGen Web Designs conçoit des sites sur mesure pour les entreprises d'un bout à l'autre du Canada, sans facture de 5 000 $ à payer d'avance. Un abonnement mensuel simple, tout inclus.
       </p>
       <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
         <a href="services.html" data-i18n="home.hero.ctaPrimary" class="btn-primary text-sm font-semibold rounded-full px-7 py-3.5">Voir nos forfaits</a>
@@ -157,7 +157,7 @@
         <div>
           <p data-i18n="home.value.eyebrow" class="diagonal-rule pl-9 text-sm font-semibold tracking-wide text-burgundy uppercase mb-4">Notre approche</p>
           <h2 data-i18n="home.value.title" class="font-display text-3xl sm:text-4xl font-semibold tracking-tight max-w-md">Un abonnement mensuel, pas une facture choc</h2>
-          <p data-i18n="home.value.body" class="mt-7 text-muted leading-relaxed max-w-md">Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web — avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.</p>
+          <p data-i18n="home.value.body" class="mt-7 text-muted leading-relaxed max-w-md">Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web, avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.</p>
         </div>
         <div class="grid sm:grid-cols-2 gap-6">
           <div class="bg-parchment rounded-2xl p-8">
@@ -181,7 +181,7 @@
         </div>
         <a href="services.html" data-i18n="home.servicesTeaser.link" class="link-underline text-sm font-semibold shrink-0">Voir tous les forfaits</a>
       </div>
-      <div id="services-teaser-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      <div id="services-teaser-grid" class="flex flex-wrap items-stretch gap-6"></div>
     </section>
 
     <!-- CTA banner -->
@@ -199,7 +199,7 @@
   <footer class="bg-ink text-ivory">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
-        <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs — Accueil">
+        <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs, accueil">
           <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web pour les entreprises d'un bout à l'autre du Canada.</p>
@@ -243,15 +243,17 @@
         </div>
       `).join("");
 
-      document.getElementById("traditional-list").innerHTML = t.value.traditional.map((line) => `<li class="flex gap-2"><span class="text-burgundy">–</span><span>${line}</span></li>`).join("");
-      document.getElementById("nexgen-list").innerHTML = t.value.nexgen.map((line) => `<li class="flex gap-2"><span class="text-ivory/65">–</span><span>${line}</span></li>`).join("");
+      document.getElementById("traditional-list").innerHTML = t.value.traditional.map((line) => `<li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">&bull;</span><span>${line}</span></li>`).join("");
+      document.getElementById("nexgen-list").innerHTML = t.value.nexgen.map((line) => `<li class="flex gap-2"><span class="text-ivory/65" aria-hidden="true">&check;</span><span>${line}</span></li>`).join("");
 
       document.getElementById("services-teaser-grid").innerHTML = t.servicesTeaser.cards.map((card) => `
-        <a href="services.html" class="rounded-2xl p-7 bg-parchment hover:shadow-lg transition-shadow block">
+        <a href="services.html" class="rounded-2xl p-7 bg-parchment hover:shadow-lg transition-shadow flex flex-col basis-full sm:basis-[calc(50%-0.75rem)] lg:basis-[calc(25%-1.125rem)]">
           <p class="text-xs tracking-[0.15em] uppercase text-muted mb-3">${card.tag}</p>
           <h3 class="font-display text-2xl font-semibold mb-2">${card.name}</h3>
-          <p class="text-sm text-muted leading-relaxed mb-5">${card.desc}</p>
-          <p class="font-display text-xl whitespace-nowrap">${card.price}<span class="text-sm text-muted">${card.period}</span></p>
+          <div class="flex-grow mb-5">
+            <p class="text-sm text-muted leading-relaxed">${card.desc}</p>
+          </div>
+          <p class="font-display text-xl whitespace-nowrap mt-auto">${card.price}<span class="text-sm text-muted">${card.period}</span></p>
         </a>
       `).join("");
     }
