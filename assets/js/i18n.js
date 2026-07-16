@@ -16,6 +16,10 @@ const translations = {
       contact: {
         title: "Contact | NexGen Web Designs",
         description: "Discutons de votre projet de site web. Studio canadien, au service des entreprises partout au pays."
+      },
+      privacy: {
+        title: "Politique de confidentialité | NexGen Web Designs",
+        description: "Comment NexGen Web Designs recueille, utilise et protège vos renseignements personnels, conformément à la Loi 25 du Québec."
       }
     },
     nav: {
@@ -225,12 +229,62 @@ const translations = {
         responseValue: "1 jour ouvrable"
       }
     },
+    privacy: {
+      header: {
+        eyebrow: "Confidentialité",
+        title: "Politique de confidentialité",
+        subtitle: "Comment NexGen Web Designs recueille, utilise et protège vos renseignements personnels."
+      },
+      updated: "Dernière mise à jour : 16 juillet 2026",
+      intro: {
+        title: "Notre engagement",
+        body: "NexGen Web Designs s'engage à protéger la vie privée des visiteurs de ce site et de nos clients, conformément à la Loi sur la protection des renseignements personnels dans le secteur privé (communément appelée la Loi 25) et aux lois canadiennes applicables en matière de protection des renseignements personnels."
+      },
+      collect: {
+        title: "Renseignements que nous recueillons",
+        body: "Lorsque vous remplissez notre formulaire de contact, nous recueillons uniquement les renseignements que vous nous fournissez volontairement :",
+        items: ["Nom complet", "Adresse courriel", "Nom de l'entreprise (facultatif)", "Le contenu de votre message et le forfait qui vous intéresse"],
+        note: "Nous n'utilisons aucun témoin de suivi ni outil d'analyse tiers. Le seul élément conservé dans votre navigateur est votre préférence de langue (français ou anglais), enregistrée localement sur votre appareil et jamais transmise à nos serveurs."
+      },
+      purpose: {
+        title: "Pourquoi nous recueillons ces renseignements",
+        body: "Nous utilisons ces renseignements uniquement pour répondre à votre demande, préparer une soumission adaptée à votre projet et communiquer avec vous au sujet de nos services. Nous ne les utilisons à aucune autre fin."
+      },
+      sharing: {
+        title: "Partage de vos renseignements",
+        body: "Nous ne vendons, ne louons et ne partageons jamais vos renseignements personnels avec des tiers à des fins commerciales ou publicitaires. Vos renseignements peuvent être transmis à nos fournisseurs de services essentiels, comme notre service de messagerie courriel, uniquement dans la mesure nécessaire pour vous répondre, ou lorsque la loi l'exige."
+      },
+      retention: {
+        title: "Conservation des renseignements",
+        body: "Nous conservons vos renseignements personnels seulement le temps nécessaire pour répondre à votre demande ou pour la durée de notre relation d'affaires, puis nous les supprimons de façon sécuritaire, sauf si la loi exige une conservation plus longue."
+      },
+      security: {
+        title: "Sécurité",
+        body: "Nous mettons en place des mesures raisonnables, techniques et organisationnelles, pour protéger vos renseignements personnels contre la perte, le vol, ainsi que l'accès, l'utilisation ou la divulgation non autorisés."
+      },
+      rights: {
+        title: "Vos droits en vertu de la Loi 25",
+        body: "Vous avez le droit de :",
+        items: [
+          "Accéder aux renseignements personnels que nous détenons à votre sujet",
+          "Faire rectifier tout renseignement inexact, incomplet ou périmé",
+          "Retirer votre consentement à la collecte ou à l'utilisation de vos renseignements en tout temps",
+          "Demander la suppression de vos renseignements personnels",
+          "Déposer une plainte auprès de la Commission d'accès à l'information du Québec si vous estimez que vos droits n'ont pas été respectés"
+        ]
+      },
+      contact: {
+        title: "Nous contacter",
+        body: "Pour exercer l'un de ces droits ou pour toute question au sujet de cette politique, écrivez-nous à nexgenweb1@gmail.com. Nous répondons à toute demande dans un délai raisonnable, conformément à la loi."
+      }
+    },
     footer: {
       tagline: "Conception de sites web pour les entreprises d'un bout à l'autre du Canada.",
       navTitle: "Navigation",
       contactTitle: "Contact",
       locationLine: "Partout au Canada",
       legal: "Vos renseignements personnels sont traités de façon sécuritaire et confidentielle.",
+      privacyLink: "Politique de confidentialité",
       copyright: "© 2026 NexGen Web Designs. Tous droits réservés."
     }
   },
@@ -251,6 +305,10 @@ const translations = {
       contact: {
         title: "Contact | NexGen Web Designs",
         description: "Let's talk about your website project. A Canadian studio serving businesses nationwide."
+      },
+      privacy: {
+        title: "Privacy Policy | NexGen Web Designs",
+        description: "How NexGen Web Designs collects, uses, and protects your personal information, in compliance with Quebec's Law 25."
       }
     },
     nav: {
@@ -460,12 +518,62 @@ const translations = {
         responseValue: "1 business day"
       }
     },
+    privacy: {
+      header: {
+        eyebrow: "Privacy",
+        title: "Privacy Policy",
+        subtitle: "How NexGen Web Designs collects, uses, and protects your personal information."
+      },
+      updated: "Last updated: July 16, 2026",
+      intro: {
+        title: "Our commitment",
+        body: "NexGen Web Designs is committed to protecting the privacy of visitors to this site and our clients, in compliance with Quebec's Act Respecting the Protection of Personal Information in the Private Sector (commonly known as Law 25) and applicable Canadian privacy laws."
+      },
+      collect: {
+        title: "Information we collect",
+        body: "When you fill out our contact form, we collect only the information you voluntarily provide to us:",
+        items: ["Full name", "Email address", "Company name (optional)", "The content of your message and the plan you're interested in"],
+        note: "We do not use any tracking cookies or third-party analytics tools. The only thing stored in your browser is your language preference (French or English), saved locally on your device and never transmitted to our servers."
+      },
+      purpose: {
+        title: "Why we collect this information",
+        body: "We use this information only to respond to your inquiry, prepare a quote tailored to your project, and communicate with you about our services. We do not use it for any other purpose."
+      },
+      sharing: {
+        title: "Sharing your information",
+        body: "We never sell, rent, or share your personal information with third parties for commercial or advertising purposes. Your information may be passed to our essential service providers, such as our email service, only to the extent necessary to respond to you, or where required by law."
+      },
+      retention: {
+        title: "Retention of information",
+        body: "We keep your personal information only as long as necessary to respond to your inquiry or for the duration of our business relationship, then securely delete it, unless the law requires a longer retention period."
+      },
+      security: {
+        title: "Security",
+        body: "We implement reasonable technical and organizational measures to protect your personal information against loss, theft, and unauthorized access, use, or disclosure."
+      },
+      rights: {
+        title: "Your rights under Law 25",
+        body: "You have the right to:",
+        items: [
+          "Access the personal information we hold about you",
+          "Request the correction of any inaccurate, incomplete, or outdated information",
+          "Withdraw your consent to the collection or use of your information at any time",
+          "Request the deletion of your personal information",
+          "File a complaint with Quebec's Commission d'accès à l'information if you believe your rights have not been respected"
+        ]
+      },
+      contact: {
+        title: "Contact us",
+        body: "To exercise any of these rights or for any question about this policy, write to us at nexgenweb1@gmail.com. We respond to all requests within a reasonable time, in accordance with the law."
+      }
+    },
     footer: {
       tagline: "Web design for businesses from coast to coast across Canada.",
       navTitle: "Navigation",
       contactTitle: "Contact",
       locationLine: "Nationwide across Canada",
       legal: "Your personal information is handled securely and kept confidential.",
+      privacyLink: "Privacy Policy",
       copyright: "© 2026 NexGen Web Designs. All rights reserved."
     }
   }

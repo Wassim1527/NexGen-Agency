@@ -115,7 +115,7 @@
           return;
         }
 
-        const subject = `Demande de soumission — ${name}`;
+        const subject = `Demande de soumission : ${name}`;
         const bodyLines = [
           `Nom: ${name}`,
           `Courriel: ${email}`,
