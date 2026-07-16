@@ -203,8 +203,11 @@ const translations = {
       },
       form: {
         name: "Nom complet",
+        namePlaceholder: "Ex. : Marie Tremblay",
         email: "Courriel",
+        emailPlaceholder: "vous@entreprise.ca",
         company: "Entreprise (optionnel)",
+        companyPlaceholder: "Nom de votre entreprise",
         plan: "Forfait qui vous intéresse",
         planOptions: [
           "Pas certain",
@@ -214,6 +217,7 @@ const translations = {
           "Signature (600 $+/mois)"
         ],
         message: "Parlez-nous de votre projet",
+        messagePlaceholder: "Décrivez vos objectifs, votre clientèle et votre échéancier.",
         submit: "Envoyer ma demande",
         note: "En cliquant, votre client courriel s'ouvrira avec les détails déjà remplis, prêts à envoyer à nexgenweb1@gmail.com.",
         requiredNote: "Champs requis : nom, courriel et message.",
@@ -492,8 +496,11 @@ const translations = {
       },
       form: {
         name: "Full name",
+        namePlaceholder: "e.g. Sarah Mitchell",
         email: "Email",
+        emailPlaceholder: "you@company.ca",
         company: "Company (optional)",
+        companyPlaceholder: "Your business name",
         plan: "Plan you're interested in",
         planOptions: [
           "Not sure yet",
@@ -503,6 +510,7 @@ const translations = {
           "Signature ($600+/mo)"
         ],
         message: "Tell us about your project",
+        messagePlaceholder: "Describe your goals, your customers, and your timeline.",
         submit: "Send my request",
         note: "Clicking this will open your email client with the details pre-filled, ready to send to nexgenweb1@gmail.com.",
         requiredNote: "Required fields: name, email, and message.",
@@ -582,11 +590,19 @@ const translations = {
 function ngGetLang() {
   const param = new URLSearchParams(window.location.search).get("lang");
   if (param === "en" || param === "fr") return param;
-  return localStorage.getItem("ng_lang") || "fr";
+  try {
+    return localStorage.getItem("ng_lang") || "fr";
+  } catch (e) {
+    return "fr";
+  }
 }
 
 function ngSetLang(lang) {
-  localStorage.setItem("ng_lang", lang);
+  try {
+    localStorage.setItem("ng_lang", lang);
+  } catch (e) {
+    /* storage blocked: language still applies for this page view */
+  }
 }
 
 function ngGetNested(obj, path) {

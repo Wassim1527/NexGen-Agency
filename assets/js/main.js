@@ -61,9 +61,6 @@
       });
     }
 
-    const yearEls = document.querySelectorAll("[data-year]");
-    yearEls.forEach((el) => (el.textContent = new Date().getFullYear()));
-
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
       const observer = new IntersectionObserver(
         (entries) => {
