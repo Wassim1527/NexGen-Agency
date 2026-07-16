@@ -580,6 +580,8 @@ const translations = {
 };
 
 function ngGetLang() {
+  const param = new URLSearchParams(window.location.search).get("lang");
+  if (param === "en" || param === "fr") return param;
   return localStorage.getItem("ng_lang") || "fr";
 }
 
@@ -627,10 +629,26 @@ function ngApplyStaticTranslations(lang) {
   document.querySelectorAll("[data-lang-label]").forEach((el) => {
     el.textContent = lang === "fr" ? "EN" : "FR";
   });
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    const baseUrl = canonical.getAttribute("href").split("?")[0];
+    const localizedUrl = lang === "en" ? baseUrl + "?lang=en" : baseUrl;
+    canonical.setAttribute("href", localizedUrl);
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", localizedUrl);
+  }
 }
 
 function ngSwitchLang(nextLang) {
   ngSetLang(nextLang);
+  const url = new URL(window.location);
+  if (nextLang === "en") {
+    url.searchParams.set("lang", "en");
+  } else {
+    url.searchParams.delete("lang");
+  }
+  history.replaceState(null, "", url);
   ngApplyStaticTranslations(nextLang);
   document.dispatchEvent(new CustomEvent("ng:langchange", { detail: { lang: nextLang } }));
 }

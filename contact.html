@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="contact agence web canadienne, soumission site web Canada, NexGen Web Designs">
   <link rel="canonical" href="https://www.nexgenwebdesigns.ca/contact.html">
+  <link rel="alternate" hreflang="fr-ca" href="https://www.nexgenwebdesigns.ca/contact.html">
+  <link rel="alternate" hreflang="en-ca" href="https://www.nexgenwebdesigns.ca/contact.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.nexgenwebdesigns.ca/contact.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
@@ -25,26 +28,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0B0B0B', ivory: '#F6F5F3', parchment: '#EDEAE5',
-            stone: '#86806F', muted: '#4B473C', burgundy: '#7A2331'
-          },
-          fontFamily: {
-            display: ['DM Serif Display', 'ui-serif', 'Georgia', 'serif'],
-            sans: ['"Lato"', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,6 +51,27 @@
     }
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.nexgenwebdesigns.ca/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://www.nexgenwebdesigns.ca/contact.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body data-page="contact" class="bg-ivory text-ink font-sans antialiased">
   <a href="#main" data-i18n="nav.skip" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] focus:bg-ink focus:text-ivory focus:px-4 focus:py-2 focus:rounded-full">Passer au contenu</a>
@@ -71,7 +80,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3.5">
         <a href="index.html" aria-label="NexGen Web Designs, accueil" class="shrink-0">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" class="h-9 sm:h-10 w-auto">
         </a>
 
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" aria-label="Principal">
@@ -139,7 +148,7 @@
           </div>
           <div>
             <label for="plan" data-i18n="contact.form.plan" class="block text-sm font-semibold mb-2">Forfait qui vous intéresse</label>
-            <select id="plan" name="plan" class="w-full rounded-xl border border-ink/15 bg-ivory px-4 py-3 text-sm focus:border-burgundy"></select>
+            <select id="plan" name="plan" class="w-full rounded-xl border border-ink/15 bg-ivory px-4 py-3 text-sm focus:border-burgundy"><option value="Pas certain">Pas certain</option><option value="Core (199&nbsp;$/mois)">Core (199&nbsp;$/mois)</option><option value="Plus (299&nbsp;$/mois)">Plus (299&nbsp;$/mois)</option><option value="Pro (499&nbsp;$/mois)">Pro (499&nbsp;$/mois)</option><option value="Signature (600&nbsp;$+/mois)">Signature (600&nbsp;$+/mois)</option></select>
           </div>
         </div>
 
@@ -178,7 +187,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
         <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs, accueil">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" loading="lazy" decoding="async" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web pour les entreprises d'un bout à l'autre du Canada.</p>
       </div>

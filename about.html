@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="agence web canadienne, studio design web Canada, NexGen Web Designs">
   <link rel="canonical" href="https://www.nexgenwebdesigns.ca/about.html">
+  <link rel="alternate" hreflang="fr-ca" href="https://www.nexgenwebdesigns.ca/about.html">
+  <link rel="alternate" hreflang="en-ca" href="https://www.nexgenwebdesigns.ca/about.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.nexgenwebdesigns.ca/about.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
@@ -25,26 +28,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0B0B0B', ivory: '#F6F5F3', parchment: '#EDEAE5',
-            stone: '#86806F', muted: '#4B473C', burgundy: '#7A2331'
-          },
-          fontFamily: {
-            display: ['DM Serif Display', 'ui-serif', 'Georgia', 'serif'],
-            sans: ['"Lato"', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,6 +45,27 @@
     "knowsLanguage": ["fr", "en"]
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.nexgenwebdesigns.ca/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "À propos",
+        "item": "https://www.nexgenwebdesigns.ca/about.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body data-page="about" class="bg-ivory text-ink font-sans antialiased">
   <a href="#main" data-i18n="nav.skip" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] focus:bg-ink focus:text-ivory focus:px-4 focus:py-2 focus:rounded-full">Passer au contenu</a>
@@ -65,7 +74,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3.5">
         <a href="index.html" aria-label="NexGen Web Designs, accueil" class="shrink-0">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" class="h-9 sm:h-10 w-auto">
         </a>
 
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" aria-label="Principal">
@@ -115,7 +124,7 @@
 
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-[0.55fr_1.45fr] gap-10 lg:gap-16 items-start" data-reveal>
       <div class="relative rounded-[2rem] bg-ink aspect-square max-w-[280px] mx-auto lg:mx-0 flex items-center justify-center">
-        <img src="assets/img/logo-mark-dark.png" alt="NexGen Web Designs" class="w-20 sm:w-24">
+        <img src="assets/img/logo-mark-dark.png" alt="Monogramme NexGen Web Designs" width="416" height="394" loading="lazy" decoding="async" class="w-20 sm:w-24">
       </div>
       <div>
         <p data-i18n="about.story.eyebrow" class="diagonal-rule pl-9 text-sm font-semibold tracking-wide text-burgundy uppercase mb-4">Notre histoire</p>
@@ -128,13 +137,52 @@
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20" data-reveal>
       <p data-i18n="about.process.eyebrow" class="diagonal-rule pl-9 text-sm font-semibold tracking-wide text-burgundy uppercase mb-4">Notre processus</p>
       <h2 data-i18n="about.process.title" class="font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12 max-w-xl">De la première rencontre à la mise en ligne</h2>
-      <div id="process-steps" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      <div id="process-steps" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-parchment rounded-2xl p-8">
+          <p class="font-display text-3xl text-burgundy mb-4">01</p>
+          <h3 class="font-display text-lg font-semibold mb-2">Découverte</h3>
+          <p class="text-sm text-muted leading-relaxed">Un appel de 20 minutes pour comprendre vos objectifs, votre clientèle et vos besoins.</p>
+        </div>
+      
+        <div class="bg-parchment rounded-2xl p-8">
+          <p class="font-display text-3xl text-burgundy mb-4">02</p>
+          <h3 class="font-display text-lg font-semibold mb-2">Design</h3>
+          <p class="text-sm text-muted leading-relaxed">Nous concevons une maquette sur mesure alignée à votre image de marque.</p>
+        </div>
+      
+        <div class="bg-parchment rounded-2xl p-8">
+          <p class="font-display text-3xl text-burgundy mb-4">03</p>
+          <h3 class="font-display text-lg font-semibold mb-2">Développement</h3>
+          <p class="text-sm text-muted leading-relaxed">Votre site est construit, testé sur mobile et tablette, et optimisé pour le référencement local.</p>
+        </div>
+      
+        <div class="bg-parchment rounded-2xl p-8">
+          <p class="font-display text-3xl text-burgundy mb-4">04</p>
+          <h3 class="font-display text-lg font-semibold mb-2">Lancement et suivi</h3>
+          <p class="text-sm text-muted leading-relaxed">Mise en ligne, puis entretien, sécurité et mises à jour continues inclus dans votre abonnement.</p>
+        </div>
+      </div>
     </section>
 
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20" data-reveal>
       <p data-i18n="about.values.eyebrow" class="diagonal-rule pl-9 text-sm font-semibold tracking-wide text-burgundy uppercase mb-4">Notre façon de travailler</p>
       <h2 data-i18n="about.values.title" class="font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12 max-w-xl">Ce sur quoi nous ne transigeons pas</h2>
-      <div id="values-grid" class="grid sm:grid-cols-3 gap-6"></div>
+      <div id="values-grid" class="grid sm:grid-cols-3 gap-6">
+        <div class="rounded-2xl p-8 bg-parchment">
+          <h3 class="font-display text-lg font-semibold mb-2">Communication directe</h3>
+          <p class="text-sm text-muted leading-relaxed">Vous parlez directement à la personne qui construit votre site, pas à un intermédiaire.</p>
+        </div>
+      
+        <div class="rounded-2xl p-8 bg-parchment">
+          <h3 class="font-display text-lg font-semibold mb-2">Rapide, sans raccourcis</h3>
+          <p class="text-sm text-muted leading-relaxed">Des délais courts ne veulent pas dire du travail bâclé : chaque site est testé avant sa mise en ligne.</p>
+        </div>
+      
+        <div class="rounded-2xl p-8 bg-parchment">
+          <h3 class="font-display text-lg font-semibold mb-2">Prix transparent</h3>
+          <p class="text-sm text-muted leading-relaxed">Un seul abonnement mensuel, taxes et détails clairs dès le premier appel.</p>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -143,7 +191,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
         <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs, accueil">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" loading="lazy" decoding="async" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web pour les entreprises d'un bout à l'autre du Canada.</p>
       </div>

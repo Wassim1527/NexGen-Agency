@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="politique de confidentialité, Loi 25, protection des renseignements personnels, NexGen Web Designs">
   <link rel="canonical" href="https://www.nexgenwebdesigns.ca/privacy.html">
+  <link rel="alternate" hreflang="fr-ca" href="https://www.nexgenwebdesigns.ca/privacy.html">
+  <link rel="alternate" hreflang="en-ca" href="https://www.nexgenwebdesigns.ca/privacy.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.nexgenwebdesigns.ca/privacy.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NexGen Web Designs">
@@ -25,26 +28,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0B0B0B', ivory: '#F6F5F3', parchment: '#EDEAE5',
-            stone: '#86806F', muted: '#4B473C', burgundy: '#7A2331'
-          },
-          fontFamily: {
-            display: ['DM Serif Display', 'ui-serif', 'Georgia', 'serif'],
-            sans: ['"Lato"', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,6 +40,27 @@
     "name": "Politique de confidentialité",
     "url": "https://www.nexgenwebdesigns.ca/privacy.html",
     "isPartOf": { "@type": "WebSite", "name": "NexGen Web Designs", "url": "https://www.nexgenwebdesigns.ca/" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.nexgenwebdesigns.ca/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Politique de confidentialité",
+        "item": "https://www.nexgenwebdesigns.ca/privacy.html"
+      }
+    ]
   }
   </script>
 </head>
@@ -62,7 +71,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-3.5">
         <a href="index.html" aria-label="NexGen Web Designs, accueil" class="shrink-0">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-9 sm:h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" class="h-9 sm:h-10 w-auto">
         </a>
 
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" aria-label="Principal">
@@ -120,7 +129,7 @@
       <div>
         <h2 data-i18n="privacy.collect.title" class="font-display text-2xl font-semibold mb-3">Renseignements que nous recueillons</h2>
         <p data-i18n="privacy.collect.body" class="text-muted leading-relaxed mb-4">Lorsque vous remplissez notre formulaire de contact, nous recueillons uniquement les renseignements que vous nous fournissez volontairement :</p>
-        <ul id="privacy-collect-items" class="space-y-2.5 text-sm text-muted mb-4"></ul>
+        <ul id="privacy-collect-items" class="space-y-2.5 text-sm text-muted mb-4"><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Nom complet</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Adresse courriel</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Nom de l'entreprise (facultatif)</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Le contenu de votre message et le forfait qui vous intéresse</span></li></ul>
         <p data-i18n="privacy.collect.note" class="text-muted leading-relaxed">Nous n'utilisons aucun témoin de suivi ni outil d'analyse tiers. Le seul élément conservé dans votre navigateur est votre préférence de langue (français ou anglais), enregistrée localement sur votre appareil et jamais transmise à nos serveurs.</p>
       </div>
 
@@ -147,7 +156,7 @@
       <div class="rounded-[1.75rem] bg-parchment p-8 sm:p-10">
         <h2 data-i18n="privacy.rights.title" class="font-display text-2xl font-semibold mb-3">Vos droits en vertu de la Loi 25</h2>
         <p data-i18n="privacy.rights.body" class="text-muted leading-relaxed mb-4">Vous avez le droit de :</p>
-        <ul id="privacy-rights-items" class="space-y-2.5 text-sm"></ul>
+        <ul id="privacy-rights-items" class="space-y-2.5 text-sm"><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Accéder aux renseignements personnels que nous détenons à votre sujet</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Faire rectifier tout renseignement inexact, incomplet ou périmé</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Retirer votre consentement à la collecte ou à l'utilisation de vos renseignements en tout temps</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Demander la suppression de vos renseignements personnels</span></li><li class="flex gap-2"><span class="text-burgundy" aria-hidden="true">✓</span><span>Déposer une plainte auprès de la Commission d'accès à l'information du Québec si vous estimez que vos droits n'ont pas été respectés</span></li></ul>
       </div>
 
       <div>
@@ -161,7 +170,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
       <div>
         <a href="index.html" class="mb-4 inline-block" aria-label="NexGen Web Designs, accueil">
-          <img src="assets/img/logo-mark-dark.png" alt="" class="h-10 w-auto">
+          <img src="assets/img/logo-mark-dark.png" alt="Logo NexGen Web Designs" width="416" height="394" loading="lazy" decoding="async" class="h-10 w-auto">
         </a>
         <p data-i18n="footer.tagline" class="text-ivory/70 max-w-xs leading-relaxed">Conception de sites web pour les entreprises d'un bout à l'autre du Canada.</p>
       </div>

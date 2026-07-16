@@ -1,0 +1,11 @@
+{
+  "name": "nexgen-tailwind-build",
+  "private": true,
+  "description": "Compiles assets/css/tailwind.css from the site's HTML/JS. Run `npm install && npm run build` after changing any Tailwind classes.",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i input.css -o ../assets/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
