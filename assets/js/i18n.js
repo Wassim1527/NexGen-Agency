@@ -219,7 +219,7 @@ const translations = {
         message: "Parlez-nous de votre projet",
         messagePlaceholder: "Décrivez vos objectifs, votre clientèle et votre échéancier.",
         submit: "Envoyer ma demande",
-        note: "En cliquant, votre client courriel s'ouvrira avec les détails déjà remplis, prêts à envoyer à nexgenweb1@gmail.com.",
+        note: "En cliquant, votre client courriel s'ouvrira avec les détails déjà remplis, prêts à envoyer à hello@nexgenwebdesigns.ca.",
         requiredNote: "Champs requis : nom, courriel et message.",
         errorRequired: "Veuillez remplir votre nom, votre courriel et votre message avant d'envoyer.",
         errorEmail: "Veuillez entrer une adresse courriel valide."
@@ -279,7 +279,7 @@ const translations = {
       },
       contact: {
         title: "Nous contacter",
-        body: "Pour exercer l'un de ces droits ou pour toute question au sujet de cette politique, écrivez-nous à nexgenweb1@gmail.com. Nous répondons à toute demande dans un délai raisonnable, conformément à la loi."
+        body: "Pour exercer l'un de ces droits ou pour toute question au sujet de cette politique, écrivez-nous à hello@nexgenwebdesigns.ca. Nous répondons à toute demande dans un délai raisonnable, conformément à la loi."
       }
     },
     footer: {
@@ -512,7 +512,7 @@ const translations = {
         message: "Tell us about your project",
         messagePlaceholder: "Describe your goals, your customers, and your timeline.",
         submit: "Send my request",
-        note: "Clicking this will open your email client with the details pre-filled, ready to send to nexgenweb1@gmail.com.",
+        note: "Clicking this will open your email client with the details pre-filled, ready to send to hello@nexgenwebdesigns.ca.",
         requiredNote: "Required fields: name, email, and message.",
         errorRequired: "Please fill in your name, email, and message before sending.",
         errorEmail: "Please enter a valid email address."
@@ -572,7 +572,7 @@ const translations = {
       },
       contact: {
         title: "Contact us",
-        body: "To exercise any of these rights or for any question about this policy, write to us at nexgenweb1@gmail.com. We respond to all requests within a reasonable time, in accordance with the law."
+        body: "To exercise any of these rights or for any question about this policy, write to us at hello@nexgenwebdesigns.ca. We respond to all requests within a reasonable time, in accordance with the law."
       }
     },
     footer: {

@@ -122,7 +122,7 @@
           message
         ].filter(Boolean);
 
-        const mailto = `mailto:nexgenweb1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+        const mailto = `mailto:hello@nexgenwebdesigns.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
         status.textContent = dict.note;
         status.classList.add("text-muted");
         status.dataset.touched = "1";
