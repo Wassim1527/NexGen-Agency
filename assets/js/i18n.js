@@ -52,19 +52,19 @@ const translations = {
       value: {
         eyebrow: "Notre approche",
         title: "Un abonnement mensuel, pas une facture choc",
-        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web, avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, aucun contrat à long terme.",
+        body: "Les agences traditionnelles facturent 3 000 $ à 10 000 $ d'un coup pour un site web, avant même de parler d'entretien. Chez NexGen, vous payez un abonnement mensuel fixe qui couvre la conception, l'hébergement, la sécurité et les mises à jour. Aucune surprise, un prix garanti pendant 3 ans.",
         traditionalTitle: "Agence traditionnelle",
         traditional: [
           "Facture initiale de 3 000 $ à 10 000 $",
           "Entretien facturé séparément, à l'heure",
-          "Contrat de plusieurs années",
           "Délais de 2 à 4 mois"
         ],
         nexgenTitle: "NexGen Web Designs",
         nexgen: [
           "Abonnement mensuel dès 199 $ CAD",
           "Hébergement, sécurité et mises à jour inclus",
-          "Aucun contrat à long terme",
+          "Prix garanti pendant 3 ans",
+          "Modifications de texte et d'images illimitées",
           "Livraison en 10 à 14 jours"
         ]
       },
@@ -89,7 +89,9 @@ const translations = {
       header: {
         eyebrow: "Nos forfaits",
         title: "Des forfaits simples, un abonnement mensuel",
-        subtitle: "Quatre forfaits pensés pour chaque étape de votre entreprise. Prix en dollars canadiens, sans surprise à la facturation."
+        subtitle: "Quatre forfaits pensés pour chaque étape de votre entreprise. Prix en dollars canadiens, sans surprise à la facturation.",
+        trustEyebrow: "Garantie tarifaire",
+        trustBadge: "Prix garanti 3 ans"
       },
       plans: [
         {
@@ -100,7 +102,9 @@ const translations = {
             "Optimisé pour mobile et tablette",
             "Formulaire de contact intégré",
             "Hébergement et nom de domaine inclus",
-            "Référencement local de base (SEO)"
+            "Référencement local de base (SEO)",
+            "Modifications de texte et d'images illimitées",
+            "Site web livré en français et en anglais"
           ],
           cta: "Choisir Core"
         },
@@ -112,7 +116,10 @@ const translations = {
             "Design entièrement personnalisé",
             "Formulaires et intégration Google Maps",
             "Hébergement, sécurité et mises à jour inclus",
-            "Référencement local avancé"
+            "Référencement local avancé",
+            "Modifications de texte et d'images illimitées",
+            "Site web livré en français et en anglais",
+            "Configuration de votre fiche Google Business Profile"
           ],
           cta: "Choisir Plus"
         },
@@ -121,11 +128,14 @@ const translations = {
           desc: "Pour les entreprises qui veulent automatiser leur prise de rendez-vous et leur suivi de clientèle.",
           features: [
             "Tout le contenu du forfait Plus",
-            "Support bilingue (FR/EN) inclus par défaut",
+            "Support client bilingue (FR/EN)",
             "Prise de rendez-vous en ligne automatisée",
             "Automatisations courriel (suivi, rappels)",
             "Intégration à vos outils (CRM, calendrier)",
-            "Rapports mensuels de performance"
+            "Rapports mensuels de performance",
+            "Modifications de texte et d'images illimitées",
+            "Site web livré en français et en anglais",
+            "Configuration de votre fiche Google Business Profile"
           ],
           cta: "Choisir Pro"
         },
@@ -137,16 +147,20 @@ const translations = {
             "Boutique en ligne, portails clients ou applications web",
             "Intégrations avancées (ERP, paiement, API)",
             "Accompagnement stratégique dédié",
-            "Support prioritaire"
+            "Support prioritaire",
+            "Modifications de texte et d'images illimitées",
+            "Site web livré en français et en anglais",
+            "Configuration de votre fiche Google Business Profile"
           ],
           cta: "Discuter de mon projet"
         }
       ],
+      plansNote: "Nouvelles pages ou fonctionnalités : sur devis.",
       faq: {
         eyebrow: "Questions fréquentes",
         title: "Ce qu'on nous demande le plus souvent",
         items: [
-          { q: "Puis-je annuler mon abonnement à tout moment?", a: "Oui. Il n'y a aucun contrat à long terme : vous pouvez modifier ou annuler votre forfait avec un préavis de 30 jours." },
+          { q: "Puis-je annuler mon abonnement à tout moment?", a: "Votre abonnement comprend un engagement initial de 24 mois, avec un prix garanti et fixe pendant 3 ans à compter de l'activation de votre site. Vous pouvez modifier votre forfait à tout moment pour l'ajuster à la croissance de votre entreprise. Des questions sur les modalités? Parlons-en lors de votre appel." },
           { q: "Le nom de domaine et l'hébergement sont-ils inclus?", a: "Oui, tous nos forfaits incluent l'hébergement, la sécurité et la gestion du nom de domaine." },
           { q: "Combien de temps avant la mise en ligne de mon site?", a: "La majorité de nos projets sont livrés entre 10 et 14 jours ouvrables suivant notre premier appel." },
           { q: "Que se passe-t-il si mes besoins changent?", a: "Vous pouvez changer de forfait à tout moment pour ajuster votre abonnement à la croissance de votre entreprise." }
@@ -345,19 +359,19 @@ const translations = {
       value: {
         eyebrow: "Our approach",
         title: "One monthly subscription, not a shock invoice",
-        body: "Traditional agencies charge $3,000 to $10,000 upfront for a website, before maintenance even enters the conversation. With NexGen, you pay one fixed monthly subscription that covers design, hosting, security, and updates. No surprises, no long-term contract.",
+        body: "Traditional agencies charge $3,000 to $10,000 upfront for a website, before maintenance even enters the conversation. With NexGen, you pay one fixed monthly subscription that covers design, hosting, security, and updates. No surprises, your price locked for 3 years.",
         traditionalTitle: "Traditional agency",
         traditional: [
           "$3,000–$10,000 upfront invoice",
           "Maintenance billed separately, by the hour",
-          "Multi-year contracts",
           "2–4 month timelines"
         ],
         nexgenTitle: "NexGen Web Designs",
         nexgen: [
           "Monthly subscription from $199 CAD",
           "Hosting, security & updates included",
-          "No long-term contract",
+          "Price locked for 3 years",
+          "Unlimited text & image edits",
           "Delivered in 10–14 days"
         ]
       },
@@ -382,7 +396,9 @@ const translations = {
       header: {
         eyebrow: "Our plans",
         title: "Simple plans, one monthly subscription",
-        subtitle: "Four plans built for every stage of your business. Priced in Canadian dollars, no billing surprises."
+        subtitle: "Four plans built for every stage of your business. Priced in Canadian dollars, no billing surprises.",
+        trustEyebrow: "Price guarantee",
+        trustBadge: "Price locked for 3 years"
       },
       plans: [
         {
@@ -393,7 +409,9 @@ const translations = {
             "Optimized for mobile & tablet",
             "Built-in contact form",
             "Hosting & domain included",
-            "Basic local SEO setup"
+            "Basic local SEO setup",
+            "Unlimited text & image edits",
+            "Website delivered in both French and English"
           ],
           cta: "Choose Core"
         },
@@ -405,7 +423,10 @@ const translations = {
             "Fully custom design",
             "Forms & Google Maps integration",
             "Hosting, security & updates included",
-            "Advanced local SEO"
+            "Advanced local SEO",
+            "Unlimited text & image edits",
+            "Website delivered in both French and English",
+            "Google Business Profile setup"
           ],
           cta: "Choose Plus"
         },
@@ -414,11 +435,14 @@ const translations = {
           desc: "For businesses ready to automate booking and client follow-up.",
           features: [
             "Everything in Plus",
-            "Bilingual (FR/EN) support included by default",
+            "Bilingual client support (FR/EN)",
             "Automated online booking",
             "Email automations (follow-ups, reminders)",
             "Integrations with your tools (CRM, calendar)",
-            "Monthly performance reports"
+            "Monthly performance reports",
+            "Unlimited text & image edits",
+            "Website delivered in both French and English",
+            "Google Business Profile setup"
           ],
           cta: "Choose Pro"
         },
@@ -430,16 +454,20 @@ const translations = {
             "Online stores, client portals or web apps",
             "Advanced integrations (ERP, payment, API)",
             "Dedicated strategic guidance",
-            "Priority support"
+            "Priority support",
+            "Unlimited text & image edits",
+            "Website delivered in both French and English",
+            "Google Business Profile setup"
           ],
           cta: "Discuss my project"
         }
       ],
+      plansNote: "New pages or features: quoted separately.",
       faq: {
         eyebrow: "Frequently asked",
         title: "What we get asked the most",
         items: [
-          { q: "Can I cancel my subscription at any time?", a: "Yes. There's no long-term contract: you can change or cancel your plan with 30 days' notice." },
+          { q: "Can I cancel my subscription at any time?", a: "Your subscription includes a 24-month initial commitment, with your rate locked and guaranteed for 3 years from the moment your site goes live. You can change plans at any time as your business grows. Questions about the terms? Let's go over them on your call." },
           { q: "Are hosting and the domain name included?", a: "Yes, every plan includes hosting, security, and domain management." },
           { q: "How long until my site goes live?", a: "Most projects are delivered within 10 to 14 business days after our first call." },
           { q: "What if my needs change?", a: "You can switch plans at any time to match your subscription to your business's growth." }
