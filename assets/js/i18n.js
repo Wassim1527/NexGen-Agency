@@ -7,7 +7,7 @@ const translations = {
       },
       services: {
         title: "Services et tarifs | NexGen Web Designs",
-        description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature 600 $+ CAD."
+        description: "Forfaits d'abonnement mensuel pour sites web professionnels au Canada : Core 199 $, Plus 299 $, Pro 499 $, Signature sur devis."
       },
       about: {
         title: "À propos | NexGen Web Designs",
@@ -76,7 +76,7 @@ const translations = {
           { name: "Core", tag: "1 page", price: "199 $", period: "/mois", desc: "Une page percutante pour lancer votre présence en ligne." },
           { name: "Plus", tag: "Multi-pages", price: "299 $", period: "/mois", desc: "Un site complet pour présenter vos services en détail." },
           { name: "Pro", tag: "Automatisation", price: "499 $", period: "/mois", desc: "Rendez-vous et suivi client automatisés." },
-          { name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois", desc: "Une solution web entièrement personnalisée." }
+          { name: "Signature", tag: "Sur mesure", price: "Sur devis", period: "", desc: "Une solution web entièrement personnalisée." }
         ]
       },
       ctaBanner: {
@@ -140,7 +140,7 @@ const translations = {
           cta: "Choisir Pro"
         },
         {
-          name: "Signature", tag: "Sur mesure", price: "600 $+", period: "/mois CAD",
+          name: "Signature", tag: "Sur mesure", price: "Sur devis", period: "",
           desc: "Une solution web entièrement sur mesure pour les projets complexes ou les besoins particuliers.",
           features: [
             "Architecture et fonctionnalités sur mesure",
@@ -228,7 +228,7 @@ const translations = {
           "Core (199 $/mois)",
           "Plus (299 $/mois)",
           "Pro (499 $/mois)",
-          "Signature (600 $+/mois)"
+          "Signature (sur devis)"
         ],
         message: "Parlez-nous de votre projet",
         messagePlaceholder: "Décrivez vos objectifs, votre clientèle et votre échéancier.",
@@ -314,7 +314,7 @@ const translations = {
       },
       services: {
         title: "Services & Pricing | NexGen Web Designs",
-        description: "Monthly subscription plans for professional websites across Canada: Core $199, Plus $299, Pro $499, Signature $600+ CAD."
+        description: "Monthly subscription plans for professional websites across Canada: Core $199, Plus $299, Pro $499, Signature custom quote."
       },
       about: {
         title: "About | NexGen Web Designs",
@@ -383,7 +383,7 @@ const translations = {
           { name: "Core", tag: "1 page", price: "$199", period: "/mo", desc: "One high-impact page to get your business online." },
           { name: "Plus", tag: "Multi-page", price: "$299", period: "/mo", desc: "A complete site to showcase your services in depth." },
           { name: "Pro", tag: "Automation", price: "$499", period: "/mo", desc: "Automated booking and client follow-up." },
-          { name: "Signature", tag: "Custom", price: "$600+", period: "/mo", desc: "A fully custom web solution." }
+          { name: "Signature", tag: "Custom", price: "Custom Quote", period: "", desc: "A fully custom web solution." }
         ]
       },
       ctaBanner: {
@@ -447,7 +447,7 @@ const translations = {
           cta: "Choose Pro"
         },
         {
-          name: "Signature", tag: "Custom", price: "$600+", period: "/mo CAD",
+          name: "Signature", tag: "Custom", price: "Custom Quote", period: "",
           desc: "A fully custom web solution for complex projects or specific needs.",
           features: [
             "Custom architecture & functionality",
@@ -535,7 +535,7 @@ const translations = {
           "Core ($199/mo)",
           "Plus ($299/mo)",
           "Pro ($499/mo)",
-          "Signature ($600+/mo)"
+          "Signature (custom quote)"
         ],
         message: "Tell us about your project",
         messagePlaceholder: "Describe your goals, your customers, and your timeline.",
